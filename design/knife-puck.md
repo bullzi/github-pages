@@ -27,6 +27,9 @@ All drawings are SVG at 1:1 mm scale. Print with "100% / actual size", no "fit t
 | [mount-c-screw-detail.svg](./mount-c-screw-detail.svg) | Mount C — back-face 9 mm countersink + section with screw path |
 | [wall-panel-drilling-guide.svg](./wall-panel-drilling-guide.svg) | Mount B — grid for laying out multiple puck positions on the back panel |
 | [assembly-diagram.svg](./assembly-diagram.svg) | Exploded stack-up for all three mounts |
+| [assembly-mount-a-vhb.svg](./assembly-mount-a-vhb.svg) | **3D step-by-step assembly for Mount A (VHB tape)** |
+| [assembly-mount-b-dowel.svg](./assembly-mount-b-dowel.svg) | **3D step-by-step assembly for Mount B (hidden dowel)** |
+| [assembly-mount-c-screw.svg](./assembly-mount-c-screw.svg) | **3D step-by-step assembly for Mount C (M4 screw)** |
 
 ---
 

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="210mm" height="297mm"
+     viewBox="0 0 210 297"
+     font-family="Helvetica, Arial, sans-serif" font-size="3" fill="black" stroke="black">
+
+  <defs>
+    <!-- Puck oblique view: viewed from above-front. Reusable, cx/cy at center of top ellipse. -->
+    <g id="puckOblique">
+      <!-- Side cylinder -->
+      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
+      <!-- Top ellipse (leather face) -->
+      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#A0552A" stroke="black" stroke-width="0.4"/>
+      <!-- Bottom edge (only front-half visible arc) -->
+      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
+    </g>
+
+    <!-- Puck flipped: leather DOWN, wood top visible (for showing back of puck) -->
+    <g id="puckBack">
+      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
+      <!-- Top is wood now -->
+      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
+      <!-- Through-hole (small ellipse) -->
+      <ellipse cx="0" cy="0" rx="2.25" ry="0.7" fill="white" stroke="black" stroke-width="0.3"/>
+      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
+      <!-- Bottom is leather: hint -->
+      <path d="M -12.5 12 A 12.5 4 0 0 1 12.5 12" fill="#A0552A" stroke="black" stroke-width="0.4" opacity="0.7"/>
+    </g>
+
+    <!-- Wall section (parallelogram for 3D feel) -->
+    <g id="wallSection">
+      <!-- Front face -->
+      <rect x="0" y="0" width="40" height="40" fill="#F0F0F0" stroke="black" stroke-width="0.4"/>
+      <!-- Top face (parallelogram going back-up-right) -->
+      <polygon points="0,0 40,0 48,-8 8,-8" fill="#D8D8D8" stroke="black" stroke-width="0.4"/>
+      <!-- Right face -->
+      <polygon points="40,0 48,-8 48,32 40,40" fill="#C0C0C0" stroke="black" stroke-width="0.4"/>
+      <!-- Texture dots -->
+      <g fill="#999" stroke="none">
+        <circle cx="8" cy="10" r="0.3"/><circle cx="20" cy="6" r="0.3"/><circle cx="32" cy="14" r="0.3"/>
+        <circle cx="14" cy="22" r="0.3"/><circle cx="28" cy="28" r="0.3"/><circle cx="35" cy="34" r="0.3"/>
+        <circle cx="6" cy="32" r="0.3"/><circle cx="18" cy="36" r="0.3"/>
+      </g>
+    </g>
+
+    <!-- VHB tape square -->
+    <g id="vhbTape">
+      <rect x="-10" y="-10" width="20" height="20" fill="#FFE680" stroke="black" stroke-width="0.4"/>
+      <text x="0" y="2" text-anchor="middle" font-size="3" stroke="none" fill="black" font-weight="bold">VHB</text>
+    </g>
+
+    <!-- Step number circle -->
+    <g id="stepNum">
+      <circle cx="0" cy="0" r="5" fill="#D32F2F" stroke="black" stroke-width="0.3"/>
+    </g>
+
+    <!-- Curved motion arrow head -->
+    <marker id="aMarkerA" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,4 L0,8 L2,4 z" fill="black"/>
+    </marker>
+
+    <!-- Hand / press symbol -->
+    <g id="pressHand">
+      <path d="M -8 0 L -8 -8 L -5 -8 L -5 -12 L -2 -12 L -2 -8 L 1 -8 L 1 -10 L 4 -10 L 4 -8 L 7 -8 L 7 -6 L 7 0 Z"
+            fill="#FFE0B0" stroke="black" stroke-width="0.4"/>
+    </g>
+
+    <!-- IPA spray bottle -->
+    <g id="sprayBottle">
+      <rect x="-4" y="-15" width="8" height="3" fill="#888" stroke="black" stroke-width="0.3"/>
+      <rect x="-2.5" y="-22" width="5" height="7" fill="#666" stroke="black" stroke-width="0.3"/>
+      <rect x="-5" y="-12" width="10" height="15" fill="#90CAF9" stroke="black" stroke-width="0.4"/>
+      <text x="0" y="-3" text-anchor="middle" font-size="2.5" stroke="none" fill="black" font-weight="bold">IPA</text>
+    </g>
+
+    <!-- Knife silhouette (small, hanging) -->
+    <g id="knifeMini">
+      <!-- Handle -->
+      <rect x="-3" y="-30" width="6" height="20" fill="#5A2A10" stroke="black" stroke-width="0.3"/>
+      <!-- Blade -->
+      <path d="M -5 -10 L 5 -10 L 4 35 L -2 40 Z" fill="#B0B0B8" stroke="black" stroke-width="0.3"/>
+    </g>
+
+    <!-- Clock symbol -->
+    <g id="clock24">
+      <circle cx="0" cy="0" r="10" fill="white" stroke="black" stroke-width="0.5"/>
+      <line x1="0" y1="0" x2="0" y2="-7" stroke="black" stroke-width="0.6"/>
+      <line x1="0" y1="0" x2="5" y2="0" stroke="black" stroke-width="0.6"/>
+      <text x="0" y="14" text-anchor="middle" font-size="3" stroke="none" font-weight="bold">24 h</text>
+    </g>
+  </defs>
+
+  <!-- Page border -->
+  <rect x="5" y="5" width="200" height="287" fill="none" stroke="black" stroke-width="0.3"/>
+
+  <!-- Title bar -->
+  <g>
+    <rect x="5" y="5" width="200" height="22" fill="#D32F2F" stroke="black" stroke-width="0.3"/>
+    <text x="15" y="17" font-size="7" font-weight="bold" stroke="none" fill="white">MOUNT A — VHB TAPE</text>
+    <text x="15" y="23" font-size="3" stroke="none" fill="white">Universal Magnetic Knife Puck — Assembly Instructions</text>
+    <text x="200" y="17" font-size="5" text-anchor="end" stroke="none" fill="white" font-weight="bold">A</text>
+    <text x="200" y="23" font-size="2.5" text-anchor="end" stroke="none" fill="white">~10 min  ·  no drilling</text>
+  </g>
+
+  <!-- ===== PARTS PANEL ===== -->
+  <g transform="translate(15, 35)">
+    <rect x="0" y="0" width="180" height="32" fill="#FAFAFA" stroke="black" stroke-width="0.3"/>
+    <text x="3" y="6" font-size="3.5" font-weight="bold" stroke="none">PARTS YOU NEED</text>
+
+    <!-- Puck -->
+    <g transform="translate(20, 22)">
+      <use href="#puckOblique"/>
+      <text x="0" y="20" text-anchor="middle" font-size="2.5" stroke="none">Puck × 1–4 per knife</text>
+    </g>
+
+    <!-- VHB -->
+    <g transform="translate(70, 22)">
+      <use href="#vhbTape"/>
+      <text x="0" y="20" text-anchor="middle" font-size="2.5" stroke="none">3M VHB 4941 tape, 20×20 mm</text>
+    </g>
+
+    <!-- IPA -->
+    <g transform="translate(115, 25)">
+      <use href="#sprayBottle"/>
+      <text x="0" y="8" text-anchor="middle" font-size="2.5" stroke="none">Isopropyl alcohol + cloth</text>
+    </g>
+
+    <!-- Hand -->
+    <g transform="translate(155, 22)">
+      <use href="#pressHand"/>
+      <text x="0" y="8" text-anchor="middle" font-size="2.5" stroke="none">Firm hand pressure</text>
+    </g>
+  </g>
+
+  <!-- ===== STEPS GRID ===== -->
+  <!-- 2 columns x 3 rows, each cell ~85mm wide x 70mm tall -->
+
+  <!-- ====== STEP 1 ====== -->
+  <g transform="translate(15, 75)">
+    <rect x="0" y="0" width="85" height="70" fill="white" stroke="black" stroke-width="0.3"/>
+    <g transform="translate(8, 8)"><use href="#stepNum"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">1</text></g>
+    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">CLEAN WALL</text>
+
+    <!-- Drawing: wall + spray bottle + cloth -->
+    <g transform="translate(45, 38)">
+      <use href="#wallSection" transform="translate(-22, -18)"/>
+      <g transform="translate(-30, -2) scale(0.8)"><use href="#sprayBottle"/></g>
+      <!-- Spray cone -->
+      <polygon points="-25,-15 -10,-22 -10,-12" fill="#B0E0FF" stroke="black" stroke-width="0.2" opacity="0.6"/>
+      <!-- Wipe arrow -->
+      <path d="M -5 -5 Q 5 -15 15 -5" fill="none" stroke="black" stroke-width="0.6" stroke-dasharray="1.5,1" marker-end="url(#aMarkerA)"/>
+    </g>
+    <text x="42.5" y="63" text-anchor="middle" font-size="2.8" stroke="none">Wipe wall + puck back with isopropyl alcohol. Let dry.</text>
+  </g>
+
+  <!-- ====== STEP 2 ====== -->
+  <g transform="translate(110, 75)">
+    <rect x="0" y="0" width="85" height="70" fill="white" stroke="black" stroke-width="0.3"/>
+    <g transform="translate(8, 8)"><use href="#stepNum"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">2</text></g>
+    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">PEEL VHB LINER #1</text>
+
+    <!-- Drawing: VHB tape with one liner peeling off -->
+    <g transform="translate(42.5, 38)">
+      <!-- Puck (back up) -->
+      <g transform="translate(0, 5)"><use href="#puckBack"/></g>
+      <!-- VHB tape sitting above -->
+      <g transform="translate(0, -8)"><use href="#vhbTape"/></g>
+      <!-- Peeling liner -->
+      <path d="M 10 -18 Q 18 -22 22 -10" fill="#FFFFFF" stroke="black" stroke-width="0.4"/>
+      <text x="25" y="-15" font-size="2.3" stroke="none">liner</text>
+      <!-- Down arrow -->
+      <path d="M 0 -2 L 0 0" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerA)"/>
+    </g>
+    <text x="42.5" y="63" text-anchor="middle" font-size="2.8" stroke="none">Peel ONE liner. Press tape onto back of puck.</text>
+  </g>
+
+  <!-- ====== STEP 3 ====== -->
+  <g transform="translate(15, 152)">
+    <rect x="0" y="0" width="85" height="70" fill="white" stroke="black" stroke-width="0.3"/>
+    <g transform="translate(8, 8)"><use href="#stepNum"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">3</text></g>
+    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">PEEL LINER #2</text>
+
+    <!-- Drawing: puck with VHB on back, second liner peeling away -->
+    <g transform="translate(42.5, 38)">
+      <g transform="translate(0, 0)"><use href="#puckBack"/></g>
+      <!-- VHB shown on back -->
+      <rect x="-8" y="-3" width="16" height="3" fill="#FFE680" stroke="black" stroke-width="0.3" transform="rotate(180)"/>
+      <!-- Liner peeling away from VHB on back side -->
+      <path d="M 12 -8 Q 22 -12 25 -2" fill="#FFFFFF" stroke="black" stroke-width="0.4"/>
+      <text x="28" y="-7" font-size="2.3" stroke="none">liner</text>
+    </g>
+    <text x="42.5" y="63" text-anchor="middle" font-size="2.8" stroke="none">Peel the SECOND liner just before sticking to wall.</text>
+  </g>
+
+  <!-- ====== STEP 4 ====== -->
+  <g transform="translate(110, 152)">
+    <rect x="0" y="0" width="85" height="70" fill="white" stroke="black" stroke-width="0.3"/>
+    <g transform="translate(8, 8)"><use href="#stepNum"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">4</text></g>
+    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">PRESS · 20 SEC</text>
+
+    <!-- Drawing: puck pressed onto wall + hand -->
+    <g transform="translate(42.5, 38)">
+      <use href="#wallSection" transform="translate(-22, -20)"/>
+      <!-- Puck stuck to wall (rotated to show profile against wall) -->
+      <g transform="translate(2, -5) rotate(-90)"><use href="#puckOblique"/></g>
+      <!-- Hand pressing -->
+      <g transform="translate(28, -2) scale(1.2)"><use href="#pressHand"/></g>
+      <!-- Push arrow -->
+      <path d="M 22 -5 L 12 -5" stroke="black" stroke-width="1.2" marker-end="url(#aMarkerA)"/>
+      <text x="22" y="-10" font-size="2.5" stroke="none" font-weight="bold">PUSH</text>
+    </g>
+    <text x="42.5" y="60" text-anchor="middle" font-size="2.8" stroke="none">Press onto wall HARD for 20 seconds.</text>
+    <text x="42.5" y="64" text-anchor="middle" font-size="2.5" stroke="none" font-style="italic">VHB needs pressure to bond.</text>
+  </g>
+
+  <!-- ====== STEP 5 ====== -->
+  <g transform="translate(15, 229)">
+    <rect x="0" y="0" width="85" height="55" fill="white" stroke="black" stroke-width="0.3"/>
+    <g transform="translate(8, 8)"><use href="#stepNum"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">5</text></g>
+    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">WAIT 24 HOURS</text>
+
+    <!-- Drawing: clock + puck on wall -->
+    <g transform="translate(42.5, 30)">
+      <use href="#wallSection" transform="translate(-22, -15)"/>
+      <g transform="translate(2, -2) rotate(-90)"><use href="#puckOblique"/></g>
+      <g transform="translate(25, -5)"><use href="#clock24"/></g>
+    </g>
+    <text x="42.5" y="50" text-anchor="middle" font-size="2.8" stroke="none">Cure for 24 hours before hanging anything.</text>
+  </g>
+
+  <!-- ====== STEP 6 ====== -->
+  <g transform="translate(110, 229)">
+    <rect x="0" y="0" width="85" height="55" fill="white" stroke="black" stroke-width="0.3"/>
+    <g transform="translate(8, 8)"><use href="#stepNum"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">6</text></g>
+    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">HANG KNIFE</text>
+
+    <!-- Drawing: puck on wall with knife floating -->
+    <g transform="translate(42.5, 30)">
+      <use href="#wallSection" transform="translate(-30, -15)"/>
+      <g transform="translate(-5, -2) rotate(-90)"><use href="#puckOblique"/></g>
+      <!-- knife floating in front -->
+      <g transform="translate(-5, -2) scale(0.5)"><use href="#knifeMini"/></g>
+      <!-- attraction lines -->
+      <path d="M -10 -2 L -3 -2" stroke="black" stroke-width="0.4" stroke-dasharray="1,0.5" marker-end="url(#aMarkerA)"/>
+    </g>
+    <text x="42.5" y="48" text-anchor="middle" font-size="2.8" stroke="none">Press the blade onto the puck. Done!</text>
+    <text x="42.5" y="52" text-anchor="middle" font-size="2.5" stroke="none" font-style="italic">Stack 2–4 pucks for heavier knives.</text>
+  </g>
+
+  <!-- ===== WARNING / NOTES ===== -->
+  <g transform="translate(15, 290)" stroke="none">
+    <text x="0" y="0" font-size="2.6" font-style="italic" fill="#D32F2F">⚠ Test for 24 h with a CHEAP knife before trusting an expensive blade. If puck pops off, your wall surface is not VHB-friendly — switch to Mount C (screw).</text>
+  </g>
+</svg>

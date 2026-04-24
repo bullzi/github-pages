@@ -12,6 +12,12 @@ _A tiny wall-mounted magnetic knife holder, designed so the wood backing is invi
 - [Wall panel layout guide](./design/wall-panel-drilling-guide.svg) — multi-knife planning sheet
 - [Assembly diagram](./design/assembly-diagram.svg) — exploded stack-up for all three mounts
 
+**3D step-by-step assembly (IKEA-style):**
+
+- [Mount A — VHB tape](./design/assembly-mount-a-vhb.svg)
+- [Mount B — Hidden dowel](./design/assembly-mount-b-dowel.svg)
+- [Mount C — M4 screw](./design/assembly-mount-c-screw.svg)
+
 ## TL;DR
 
 - Universal **Ø25 × 12 mm** hardwood puck with a 1 mm leather face.
