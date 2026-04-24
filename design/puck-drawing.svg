@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="297mm" height="210mm"
+     viewBox="0 0 297 210"
+     font-family="Helvetica, Arial, sans-serif" font-size="3" fill="black" stroke="black">
+
+  <defs>
+    <pattern id="woodHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(45)">
+      <rect width="1.2" height="1.2" fill="#F3E1C0"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#A07A3A" stroke-width="0.12"/>
+    </pattern>
+    <pattern id="magnetHatch" patternUnits="userSpaceOnUse" width="0.8" height="0.8" patternTransform="rotate(45)">
+      <rect width="0.8" height="0.8" fill="#B0B0B8"/>
+      <line x1="0" y1="0" x2="0" y2="0.8" stroke="#303036" stroke-width="0.12"/>
+      <line x1="0" y1="0" x2="0.8" y2="0" stroke="#303036" stroke-width="0.12"/>
+    </pattern>
+    <pattern id="leatherHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(-45)">
+      <rect width="1.2" height="1.2" fill="#C07A3A"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#5A2A10" stroke-width="0.15"/>
+    </pattern>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,3 L0,6 L1.5,3 z" fill="black"/>
+    </marker>
+    <marker id="arrowR" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M5,0 L0,3 L5,6 L3.5,3 z" fill="black"/>
+    </marker>
+  </defs>
+
+  <!-- Page border -->
+  <rect x="5" y="5" width="287" height="200" fill="none" stroke="black" stroke-width="0.15"/>
+
+  <!-- Title block -->
+  <g font-family="Helvetica, Arial, sans-serif">
+    <text x="10" y="13" font-size="5" font-weight="bold">Universal Magnetic Knife Puck — Body</text>
+    <text x="10" y="18" font-size="2.8">All dimensions in millimetres. Drawing at 1:1 scale — verify with the 50 mm scale bar before drilling.</text>
+    <text x="10" y="22" font-size="2.8">Material: dense hardwood (walnut / white oak / maple).  Magnet: N52 ring, 20×5×4.5 mm.  Front facing: 1 mm veg-tan leather.</text>
+  </g>
+
+  <!-- =================== FRONT VIEW =================== -->
+  <g transform="translate(60, 70)">
+    <text x="0" y="-28" text-anchor="middle" font-size="4" font-weight="bold" stroke="none">FRONT VIEW</text>
+    <text x="0" y="-24" text-anchor="middle" font-size="2.6" stroke="none">(knife-facing side, leather visible)</text>
+
+    <!-- Outer body Ø25 -->
+    <circle cx="0" cy="0" r="12.5" fill="url(#leatherHatch)" stroke="black" stroke-width="0.3"/>
+
+    <!-- Hidden magnet pocket Ø20 -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray="1.2,0.8"/>
+    <!-- Hidden magnet ID Ø4.5 (same as through hole from front) -->
+    <circle cx="0" cy="0" r="2.25" fill="none" stroke="black" stroke-width="0.25" stroke-dasharray="1.2,0.8"/>
+
+    <!-- Centerlines -->
+    <line x1="-16" y1="0" x2="16" y2="0" stroke="black" stroke-width="0.1" stroke-dasharray="4,0.8,0.3,0.8"/>
+    <line x1="0" y1="-16" x2="0" y2="16" stroke="black" stroke-width="0.1" stroke-dasharray="4,0.8,0.3,0.8"/>
+
+    <!-- Ø25 outer dimension -->
+    <line x1="-12.5" y1="-18" x2="12.5" y2="-18" stroke="black" stroke-width="0.2" marker-start="url(#arrowR)" marker-end="url(#arrow)"/>
+    <line x1="-12.5" y1="-12.5" x2="-12.5" y2="-19" stroke="black" stroke-width="0.15"/>
+    <line x1="12.5" y1="-12.5" x2="12.5" y2="-19" stroke="black" stroke-width="0.15"/>
+    <rect x="-3" y="-20.5" width="6" height="3.2" fill="white" stroke="none"/>
+    <text x="0" y="-18" text-anchor="middle" font-size="3" stroke="none">Ø25</text>
+
+    <!-- Ø20 pocket leader -->
+    <line x1="7.07" y1="-7.07" x2="15" y2="-14" stroke="black" stroke-width="0.15"/>
+    <line x1="15" y1="-14" x2="22" y2="-14" stroke="black" stroke-width="0.15"/>
+    <text x="22.5" y="-13" font-size="2.6" stroke="none">Ø20 × 5 deep (magnet pocket, hidden)</text>
+
+    <!-- Ø4.5 through-hole leader -->
+    <line x1="1.59" y1="-1.59" x2="10" y2="-5" stroke="black" stroke-width="0.15"/>
+    <line x1="10" y1="-5" x2="22" y2="-5" stroke="black" stroke-width="0.15"/>
+    <text x="22.5" y="-4" font-size="2.6" stroke="none">Ø4.5 through-hole</text>
+
+    <!-- Section indicator A-A -->
+    <g font-size="3" font-weight="bold" stroke="none">
+      <line x1="-17" y1="0" x2="-14" y2="0" stroke="black" stroke-width="0.4"/>
+      <line x1="14" y1="0" x2="17" y2="0" stroke="black" stroke-width="0.4"/>
+      <text x="-18.5" y="1" text-anchor="end">A</text>
+      <text x="18.5" y="1">A</text>
+    </g>
+  </g>
+
+  <!-- =================== SECTION A-A (SIDE) =================== -->
+  <g transform="translate(170, 70)">
+    <text x="0" y="-28" text-anchor="middle" font-size="4" font-weight="bold" stroke="none">SECTION A-A</text>
+    <text x="0" y="-24" text-anchor="middle" font-size="2.6" stroke="none">(vertical cut through center, side view)</text>
+
+    <!-- Coordinate system: y=0 at the top of the wood (front face)
+         Leather above 0, wood below. Positive y = toward back. -->
+
+    <!-- Leather layer: 25 wide, 1 tall, centered at x=0, just above y=0 -->
+    <rect x="-12.5" y="-1" width="25" height="1" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+
+    <!-- Wood body: 25 wide, 12 tall, from y=0 to y=12 -->
+    <!-- We'll draw the wood as a full rectangle first, then overlay the magnet and through-hole cutouts. -->
+    <rect x="-12.5" y="0" width="25" height="12" fill="url(#woodHatch)" stroke="black" stroke-width="0.3"/>
+
+    <!-- Magnet pocket (cut out of wood): 20 wide, 5 tall, from y=2 (2mm front wall) to y=7 -->
+    <!-- fill white first to remove wood, then draw magnet -->
+    <rect x="-10" y="2" width="20" height="5" fill="white" stroke="none"/>
+    <!-- Magnet ring (20 OD × 4.5 ID) in section: two 7.75-wide rectangles of magnet material -->
+    <rect x="-10" y="2" width="7.75" height="5" fill="url(#magnetHatch)" stroke="black" stroke-width="0.25"/>
+    <rect x="2.25" y="2" width="7.75" height="5" fill="url(#magnetHatch)" stroke="black" stroke-width="0.25"/>
+
+    <!-- Through-hole 4.5 wide, from y=-1 (through leather) to y=12 -->
+    <rect x="-2.25" y="-1" width="4.5" height="13" fill="white" stroke="none"/>
+    <line x1="-2.25" y1="-1" x2="-2.25" y2="12" stroke="black" stroke-width="0.25"/>
+    <line x1="2.25" y1="-1" x2="2.25" y2="12" stroke="black" stroke-width="0.25"/>
+
+    <!-- Re-outline the whole section for clarity -->
+    <!-- Leather outline already drawn. Wood outline: -->
+    <line x1="-12.5" y1="0" x2="-12.5" y2="12" stroke="black" stroke-width="0.3"/>
+    <line x1="12.5" y1="0" x2="12.5" y2="12" stroke="black" stroke-width="0.3"/>
+    <line x1="-12.5" y1="12" x2="12.5" y2="12" stroke="black" stroke-width="0.3"/>
+
+    <!-- Callouts -->
+    <!-- front wall 2 -->
+    <line x1="-10" y1="0" x2="-10" y2="2" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="-10" y1="0" x2="-20" y2="-3" stroke="black" stroke-width="0.15"/>
+    <text x="-35" y="-3.3" font-size="2.6" stroke="none">front wall 2 mm</text>
+
+    <!-- leather 1 -->
+    <line x1="14" y1="-1" x2="14" y2="0" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="15" y="0" font-size="2.6" stroke="none">leather 1 mm</text>
+
+    <!-- total thickness 12 wood -->
+    <line x1="18" y1="0" x2="18" y2="12" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="12.5" y1="0" x2="19" y2="0" stroke="black" stroke-width="0.15"/>
+    <line x1="12.5" y1="12" x2="19" y2="12" stroke="black" stroke-width="0.15"/>
+    <text x="19" y="7" font-size="3" stroke="none">12 (wood)</text>
+
+    <!-- magnet thickness 5 -->
+    <line x1="-14" y1="2" x2="-14" y2="7" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="-12.5" y1="2" x2="-15" y2="2" stroke="black" stroke-width="0.15"/>
+    <line x1="-12.5" y1="7" x2="-15" y2="7" stroke="black" stroke-width="0.15"/>
+    <text x="-15" y="4.8" text-anchor="end" font-size="3" stroke="none">5</text>
+    <text x="-15" y="7.8" text-anchor="end" font-size="2.3" stroke="none">(pocket depth)</text>
+
+    <!-- back wood 7 -->
+    <line x1="-14" y1="7" x2="-14" y2="12" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="-15" y="10.2" text-anchor="end" font-size="3" stroke="none">7 (back wood)</text>
+
+    <!-- magnet OD 20 -->
+    <line x1="-10" y1="16" x2="10" y2="16" stroke="black" stroke-width="0.2" marker-start="url(#arrowR)" marker-end="url(#arrow)"/>
+    <line x1="-10" y1="7" x2="-10" y2="16.5" stroke="black" stroke-width="0.15"/>
+    <line x1="10" y1="7" x2="10" y2="16.5" stroke="black" stroke-width="0.15"/>
+    <text x="0" y="19" text-anchor="middle" font-size="3" stroke="none">Ø20 (pocket / magnet OD)</text>
+
+    <!-- OD 25 -->
+    <line x1="-12.5" y1="22" x2="12.5" y2="22" stroke="black" stroke-width="0.2" marker-start="url(#arrowR)" marker-end="url(#arrow)"/>
+    <line x1="-12.5" y1="12" x2="-12.5" y2="22.5" stroke="black" stroke-width="0.15"/>
+    <line x1="12.5" y1="12" x2="12.5" y2="22.5" stroke="black" stroke-width="0.15"/>
+    <text x="0" y="25" text-anchor="middle" font-size="3" stroke="none">Ø25 (puck OD)</text>
+
+    <!-- through-hole 4.5 -->
+    <line x1="-2.25" y1="-4" x2="2.25" y2="-4" stroke="black" stroke-width="0.2" marker-start="url(#arrowR)" marker-end="url(#arrow)"/>
+    <line x1="-2.25" y1="-1" x2="-2.25" y2="-4.5" stroke="black" stroke-width="0.15"/>
+    <line x1="2.25" y1="-1" x2="2.25" y2="-4.5" stroke="black" stroke-width="0.15"/>
+    <text x="0" y="-5.5" text-anchor="middle" font-size="2.8" stroke="none">Ø4.5 through</text>
+
+    <!-- Labels for layers -->
+    <text x="0" y="-1.7" text-anchor="middle" font-size="2" stroke="none" fill="white">LEATHER</text>
+  </g>
+
+  <!-- =================== BACK VIEW =================== -->
+  <g transform="translate(60, 150)">
+    <text x="0" y="-28" text-anchor="middle" font-size="4" font-weight="bold" stroke="none">BACK VIEW</text>
+    <text x="0" y="-24" text-anchor="middle" font-size="2.6" stroke="none">(wall-facing side, as shipped — before mount prep)</text>
+
+    <!-- Outer body Ø25 -->
+    <circle cx="0" cy="0" r="12.5" fill="url(#woodHatch)" stroke="black" stroke-width="0.3"/>
+
+    <!-- Through-hole Ø4.5 (visible in this view) -->
+    <circle cx="0" cy="0" r="2.25" fill="white" stroke="black" stroke-width="0.3"/>
+
+    <!-- Hidden magnet pocket Ø20 outline -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1.2,0.8"/>
+
+    <!-- Centerlines -->
+    <line x1="-16" y1="0" x2="16" y2="0" stroke="black" stroke-width="0.1" stroke-dasharray="4,0.8,0.3,0.8"/>
+    <line x1="0" y1="-16" x2="0" y2="16" stroke="black" stroke-width="0.1" stroke-dasharray="4,0.8,0.3,0.8"/>
+
+    <!-- Ø4.5 callout -->
+    <line x1="1.59" y1="1.59" x2="10" y2="5" stroke="black" stroke-width="0.15"/>
+    <line x1="10" y1="5" x2="22" y2="5" stroke="black" stroke-width="0.15"/>
+    <text x="22.5" y="6" font-size="2.6" stroke="none">Ø4.5 through-hole (visible)</text>
+
+    <!-- Ø20 pocket (hidden) callout -->
+    <line x1="7.07" y1="7.07" x2="15" y2="12" stroke="black" stroke-width="0.15"/>
+    <line x1="15" y1="12" x2="22" y2="12" stroke="black" stroke-width="0.15"/>
+    <text x="22.5" y="13" font-size="2.6" stroke="none">Ø20 magnet pocket (hidden)</text>
+
+    <!-- Mount notes -->
+    <g transform="translate(0, 20)" stroke="none">
+      <text x="0" y="0" text-anchor="middle" font-size="3" font-weight="bold">BACK-FACE MOUNT PREP (pick one at install time)</text>
+      <text x="0" y="5" text-anchor="middle" font-size="2.6">A · VHB: no additional drilling (see note)</text>
+      <text x="0" y="9" text-anchor="middle" font-size="2.6">B · Dowel: 10 mm Forstner × 5 mm deep, centered</text>
+      <text x="0" y="13" text-anchor="middle" font-size="2.6">C · Screw: 9 mm Forstner × 2 mm deep countersink, centered</text>
+    </g>
+  </g>
+
+  <!-- =================== NOTES BLOCK =================== -->
+  <g transform="translate(150, 125)" stroke="none">
+    <text x="0" y="0" font-size="3.5" font-weight="bold">NOTES</text>
+    <text x="0" y="5" font-size="2.6">1. All dimensions in mm. Tolerance ±0.3 mm unless noted.</text>
+    <text x="0" y="9" font-size="2.6">2. Magnet pocket drilled from FRONT with 20 mm Forstner, 5 mm deep.</text>
+    <text x="0" y="13" font-size="2.6">3. Through-hole drilled FIRST with 4.5 mm twist bit from front; pilots all subsequent drilling.</text>
+    <text x="0" y="17" font-size="2.6">4. Magnet is ring type 20×5×4.5 mm; bonded in pocket with 5-min epoxy.</text>
+    <text x="0" y="21" font-size="2.6">5. Front wall (2 mm wood + 1 mm leather) is critical; do not thin further.</text>
+    <text x="0" y="25" font-size="2.6">6. Grain orientation is free — the puck is symmetric and loads in shear only.</text>
+    <text x="0" y="29" font-size="2.6">7. Each puck holds ~4–5 kg through the front face. Stack 1–4 pucks per knife.</text>
+    <text x="0" y="33" font-size="2.6">8. See mount-b-dowel-detail.svg and mount-c-screw-detail.svg for back-face prep.</text>
+  </g>
+
+  <!-- =================== SCALE BAR =================== -->
+  <g transform="translate(100, 188)">
+    <rect x="0" y="-2" width="50" height="4" fill="white" stroke="black" stroke-width="0.2"/>
+    <line x1="0" y1="-2" x2="0" y2="2" stroke="black" stroke-width="0.3"/>
+    <line x1="10" y1="-2" x2="10" y2="2" stroke="black" stroke-width="0.2"/>
+    <line x1="20" y1="-2" x2="20" y2="2" stroke="black" stroke-width="0.2"/>
+    <line x1="30" y1="-2" x2="30" y2="2" stroke="black" stroke-width="0.2"/>
+    <line x1="40" y1="-2" x2="40" y2="2" stroke="black" stroke-width="0.2"/>
+    <line x1="50" y1="-2" x2="50" y2="2" stroke="black" stroke-width="0.3"/>
+    <rect x="0" y="-2" width="10" height="4" fill="black"/>
+    <rect x="20" y="-2" width="10" height="4" fill="black"/>
+    <rect x="40" y="-2" width="10" height="4" fill="black"/>
+    <text x="25" y="-3.5" text-anchor="middle" font-size="2.8" stroke="none" font-weight="bold">1:1 SCALE CHECK — measure with a ruler, must read 50 mm</text>
+    <text x="0" y="6" font-size="2.5" stroke="none">0</text>
+    <text x="50" y="6" font-size="2.5" text-anchor="end" stroke="none">50 mm</text>
+  </g>
+</svg>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="210mm" height="297mm"
+     viewBox="0 0 210 297"
+     font-family="Helvetica, Arial, sans-serif" font-size="3" fill="black" stroke="black">
+
+  <!-- Page border -->
+  <rect x="5" y="5" width="200" height="287" fill="none" stroke="black" stroke-width="0.15"/>
+
+  <!-- Title -->
+  <g font-family="Helvetica, Arial, sans-serif" stroke="none">
+    <text x="105" y="15" text-anchor="middle" font-size="5" font-weight="bold">Puck Drilling Template — 1:1</text>
+    <text x="105" y="20" text-anchor="middle" font-size="2.8">Print at 100% / Actual Size. Do NOT "fit to page". Verify with the scale bar at the bottom before use.</text>
+    <text x="105" y="24" text-anchor="middle" font-size="2.8">Usage: cut out each 25 mm disc, glue or tape to the front face of the wood blank, centerpunch through the crosshair, then drill.</text>
+  </g>
+
+  <!-- Grid of 6 pucks: 3 columns x 2 rows -->
+  <!-- Center positions in mm: columns at x=55,105,155; rows at y=70,130 -->
+
+  <!-- ============ TEMPLATE 1 ============ -->
+  <g transform="translate(55, 70)">
+    <!-- Outer Ø25 cut line -->
+    <circle cx="0" cy="0" r="12.5" fill="none" stroke="black" stroke-width="0.3"/>
+    <!-- Inner hidden Ø20 (where magnet pocket will be) -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1,0.6"/>
+    <!-- Inner Ø4.5 through-hole reference -->
+    <circle cx="0" cy="0" r="2.25" fill="none" stroke="black" stroke-width="0.2"/>
+    <!-- Crosshair for centerpunch -->
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="red" stroke-width="0.4"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="red" stroke-width="0.4"/>
+    <circle cx="0" cy="0" r="0.4" fill="red" stroke="none"/>
+    <!-- Label -->
+    <text x="0" y="18" text-anchor="middle" font-size="2.8" stroke="none">Puck #1 — Ø25 × 12 blank</text>
+  </g>
+
+  <g transform="translate(105, 70)">
+    <circle cx="0" cy="0" r="12.5" fill="none" stroke="black" stroke-width="0.3"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1,0.6"/>
+    <circle cx="0" cy="0" r="2.25" fill="none" stroke="black" stroke-width="0.2"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="red" stroke-width="0.4"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="red" stroke-width="0.4"/>
+    <circle cx="0" cy="0" r="0.4" fill="red" stroke="none"/>
+    <text x="0" y="18" text-anchor="middle" font-size="2.8" stroke="none">Puck #2</text>
+  </g>
+
+  <g transform="translate(155, 70)">
+    <circle cx="0" cy="0" r="12.5" fill="none" stroke="black" stroke-width="0.3"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1,0.6"/>
+    <circle cx="0" cy="0" r="2.25" fill="none" stroke="black" stroke-width="0.2"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="red" stroke-width="0.4"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="red" stroke-width="0.4"/>
+    <circle cx="0" cy="0" r="0.4" fill="red" stroke="none"/>
+    <text x="0" y="18" text-anchor="middle" font-size="2.8" stroke="none">Puck #3</text>
+  </g>
+
+  <g transform="translate(55, 130)">
+    <circle cx="0" cy="0" r="12.5" fill="none" stroke="black" stroke-width="0.3"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1,0.6"/>
+    <circle cx="0" cy="0" r="2.25" fill="none" stroke="black" stroke-width="0.2"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="red" stroke-width="0.4"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="red" stroke-width="0.4"/>
+    <circle cx="0" cy="0" r="0.4" fill="red" stroke="none"/>
+    <text x="0" y="18" text-anchor="middle" font-size="2.8" stroke="none">Puck #4</text>
+  </g>
+
+  <g transform="translate(105, 130)">
+    <circle cx="0" cy="0" r="12.5" fill="none" stroke="black" stroke-width="0.3"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1,0.6"/>
+    <circle cx="0" cy="0" r="2.25" fill="none" stroke="black" stroke-width="0.2"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="red" stroke-width="0.4"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="red" stroke-width="0.4"/>
+    <circle cx="0" cy="0" r="0.4" fill="red" stroke="none"/>
+    <text x="0" y="18" text-anchor="middle" font-size="2.8" stroke="none">Puck #5</text>
+  </g>
+
+  <g transform="translate(155, 130)">
+    <circle cx="0" cy="0" r="12.5" fill="none" stroke="black" stroke-width="0.3"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1,0.6"/>
+    <circle cx="0" cy="0" r="2.25" fill="none" stroke="black" stroke-width="0.2"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="red" stroke-width="0.4"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="red" stroke-width="0.4"/>
+    <circle cx="0" cy="0" r="0.4" fill="red" stroke="none"/>
+    <text x="0" y="18" text-anchor="middle" font-size="2.8" stroke="none">Puck #6</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(20, 180)" stroke="none">
+    <text x="0" y="0" font-size="4" font-weight="bold">LEGEND</text>
+    <g transform="translate(0, 5)">
+      <circle cx="3" cy="2" r="3" fill="none" stroke="black" stroke-width="0.3"/>
+      <text x="10" y="3" font-size="2.8">Solid black — Ø25 outer body (cut here if marking from the template)</text>
+    </g>
+    <g transform="translate(0, 13)">
+      <circle cx="3" cy="2" r="3" fill="none" stroke="black" stroke-width="0.15" stroke-dasharray="1,0.6"/>
+      <text x="10" y="3" font-size="2.8">Dashed black — Ø20 magnet pocket location (drill from front, 5 mm deep, 20 mm Forstner)</text>
+    </g>
+    <g transform="translate(0, 21)">
+      <circle cx="3" cy="2" r="1.5" fill="none" stroke="black" stroke-width="0.2"/>
+      <text x="10" y="3" font-size="2.8">Inner circle — Ø4.5 through-hole (drill FIRST with 4.5 mm twist bit; pilots the rest)</text>
+    </g>
+    <g transform="translate(0, 29)">
+      <line x1="0" y1="2" x2="6" y2="2" stroke="red" stroke-width="0.4"/>
+      <text x="10" y="3" font-size="2.8">Red crosshair — centerpunch here. Must be punched before the paper template is removed.</text>
+    </g>
+  </g>
+
+  <!-- Drill sequence -->
+  <g transform="translate(20, 220)" stroke="none">
+    <text x="0" y="0" font-size="4" font-weight="bold">DRILL SEQUENCE (per puck)</text>
+    <text x="0" y="6" font-size="2.8">1. Stick template to the front face of a Ø25 × 12 mm hardwood blank (spray-mount or double-sided tape).</text>
+    <text x="0" y="10" font-size="2.8">2. Centerpunch through the red crosshair.</text>
+    <text x="0" y="14" font-size="2.8">3. Drill Ø4.5 through-hole first, all the way through the blank.</text>
+    <text x="0" y="18" font-size="2.8">4. Swap to 20 mm Forstner bit. Drill front pocket 5 mm deep (depth collar or tape wrap).</text>
+    <text x="0" y="22" font-size="2.8">5. Remove the paper template. Clean the pocket with compressed air or a brush.</text>
+    <text x="0" y="26" font-size="2.8">6. Proceed to mount-specific back-face drilling (see mount-b-dowel-detail.svg or mount-c-screw-detail.svg).</text>
+    <text x="0" y="30" font-size="2.8">   — For Mount A (VHB), no back-face drilling is needed.</text>
+  </g>
+
+  <!-- Scale bar -->
+  <g transform="translate(80, 275)">
+    <rect x="0" y="-2" width="50" height="4" fill="white" stroke="black" stroke-width="0.2"/>
+    <rect x="0" y="-2" width="10" height="4" fill="black"/>
+    <rect x="20" y="-2" width="10" height="4" fill="black"/>
+    <rect x="40" y="-2" width="10" height="4" fill="black"/>
+    <text x="25" y="-3.5" text-anchor="middle" font-size="2.8" stroke="none" font-weight="bold">1:1 SCALE CHECK — must measure 50 mm with a ruler</text>
+    <text x="0" y="6" font-size="2.5" stroke="none">0</text>
+    <text x="50" y="6" font-size="2.5" text-anchor="end" stroke="none">50 mm</text>
+  </g>
+</svg>
