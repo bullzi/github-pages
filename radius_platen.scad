@@ -1,18 +1,20 @@
 // Radius Platen — 36" wheel profile
-// Length 200 mm × Width 49 mm × Base 15 mm
-// Total max height (crown): 26.07 mm
+// Length 200 mm × Width 49 mm
+// Total max height (crown):  15.00 mm  (constraint)
+// Edge thickness:             3.93 mm
 //
 // Render: F6 in OpenSCAD, then File > Export > STL for printing/CAM.
 
 L     = 200;        // length along belt travel (mm)
 W     = 49;         // width across belt (mm)
-BASE  = 15;         // flat base thickness (mm)
+TOP   = 15;         // total max height at center (mm)
 R     = 457.2;      // wheel radius = 36"/2 = 18" = 457.2 mm
 $fn   = 256;        // smoothness
 
 SAG   = R - sqrt(R*R - (L/2)*(L/2));   // ≈ 11.07 mm
-TOP   = BASE + SAG;                     // ≈ 26.07 mm
+BASE  = TOP - SAG;                      // edge thickness ≈ 3.93 mm
 echo(str("Sagitta = ", SAG, " mm"));
+echo(str("Edge thickness = ", BASE, " mm"));
 echo(str("Total max height = ", TOP, " mm"));
 
 // Subtractive approach: solid block, then carve the cylinder out of the top.

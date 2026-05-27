@@ -4,9 +4,10 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch
 
 L = 200.0
-BASE = 15.0
 R = 457.2
-SAG = R - np.sqrt(R**2 - (L/2)**2)
+SAG = R - np.sqrt(R**2 - (L/2)**2)   # 11.07 mm
+TOP_MAX = 15.0                        # constraint
+BASE = TOP_MAX - SAG                  # 3.93 mm edge thickness
 
 fig, ax = plt.subplots(figsize=(12, 4.5))
 
@@ -36,12 +37,12 @@ def vdim(y1, y2, x, txt, off=4, ha='left'):
             color='#d32f2f', fontsize=10, weight='bold')
 
 hdim(-L/2, L/2, -4, "L = 200 mm  (chord)")
-vdim(0, BASE, -L/2 - 6, "Base\n15 mm", off=-6, ha='right')
+vdim(0, BASE, -L/2 - 6, f"Edge\n{BASE:.2f} mm", off=-6, ha='right')
 vdim(BASE, BASE+SAG, L/2 + 6, "Sagitta\n11.07 mm")
-vdim(0, BASE+SAG, L/2 + 40, "Max H\n26.07 mm")
+vdim(0, BASE+SAG, L/2 + 40, "Max H\n15.00 mm")
 
 # Edge thickness callout
-ax.annotate('Edge thickness = 15 mm', xy=(-L/2+5, BASE/2),
+ax.annotate(f'Edge thickness = {BASE:.2f} mm  (thin!)', xy=(-L/2+5, BASE/2),
             xytext=(-L/2+25, BASE/2 - 12),
             arrowprops=dict(arrowstyle='->', color='#1565c0'),
             color='#1565c0', fontsize=9)
