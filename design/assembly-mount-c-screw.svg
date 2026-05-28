@@ -1,279 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="210mm" height="297mm"
-     viewBox="0 0 210 297"
+     width="297mm" height="210mm"
+     viewBox="0 0 297 210"
      font-family="Helvetica, Arial, sans-serif" font-size="3" fill="black" stroke="black">
 
   <defs>
-    <g id="puckObliqueC">
-      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#A0552A" stroke="black" stroke-width="0.4"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
-    </g>
+    <pattern id="woodHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(45)">
+      <rect width="1.2" height="1.2" fill="#F3E1C0"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#A07A3A" stroke-width="0.12"/>
+    </pattern>
+    <pattern id="leatherHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(-45)">
+      <rect width="1.2" height="1.2" fill="#C07A3A"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#5A2A10" stroke-width="0.15"/>
+    </pattern>
+    <pattern id="magnetHatch" patternUnits="userSpaceOnUse" width="0.8" height="0.8" patternTransform="rotate(45)">
+      <rect width="0.8" height="0.8" fill="#B0B0B8"/>
+      <line x1="0" y1="0" x2="0" y2="0.8" stroke="#303036" stroke-width="0.12"/>
+      <line x1="0" y1="0" x2="0.8" y2="0" stroke="#303036" stroke-width="0.12"/>
+    </pattern>
+    <pattern id="metalHatch" patternUnits="userSpaceOnUse" width="0.7" height="0.7" patternTransform="rotate(30)">
+      <rect width="0.7" height="0.7" fill="#D0D0D6"/>
+      <line x1="0" y1="0" x2="0" y2="0.7" stroke="#404048" stroke-width="0.1"/>
+    </pattern>
+    <pattern id="drywallHatch" patternUnits="userSpaceOnUse" width="1.6" height="1.6">
+      <rect width="1.6" height="1.6" fill="#F4F1EA"/>
+      <circle cx="0.4" cy="0.4" r="0.12" fill="#8A857B"/>
+      <circle cx="1.1" cy="1.0" r="0.12" fill="#8A857B"/>
+    </pattern>
+    <pattern id="bladeHatch" patternUnits="userSpaceOnUse" width="1.0" height="1.0">
+      <rect width="1.0" height="1.0" fill="#E8E8EC"/>
+      <line x1="0" y1="0" x2="1.0" y2="1.0" stroke="#6A6A72" stroke-width="0.08"/>
+    </pattern>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,3 L0,6 L1.5,3 z" fill="black"/>
+    </marker>
+    <marker id="arrowFat" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,4 L0,8 L2,4 z" fill="#222"/>
+    </marker>
 
-    <!-- Puck back showing through-hole + countersink (after drilling) -->
-    <g id="puckBackCsk">
-      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <!-- 9mm countersink (outer) -->
-      <ellipse cx="0" cy="0" rx="4.5" ry="1.4" fill="#A0823A" stroke="black" stroke-width="0.4"/>
-      <!-- 4.5mm through hole (inner darker) -->
-      <ellipse cx="0" cy="0" rx="2.25" ry="0.7" fill="#3A2810" stroke="black" stroke-width="0.3"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 1 12.5 12" fill="#A0552A" stroke="black" stroke-width="0.4" opacity="0.7"/>
-    </g>
+    <symbol id="forstner7" overflow="visible">
+      <rect x="-3" y="-30" width="6" height="20" fill="#9AA0A8" stroke="black" stroke-width="0.25"/>
+      <rect x="-3.5" y="-10" width="7" height="3" fill="#C0C5CC" stroke="black" stroke-width="0.25"/>
+      <path d="M -3.5 -7 L 0 -4 L 3.5 -7 Z" fill="#909098" stroke="black" stroke-width="0.25"/>
+    </symbol>
 
-    <!-- Puck back BEFORE countersink (just through-hole) -->
-    <g id="puckBackPlain">
-      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="2.25" ry="0.7" fill="white" stroke="black" stroke-width="0.3"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 1 12.5 12" fill="#A0552A" stroke="black" stroke-width="0.4" opacity="0.7"/>
-    </g>
-
-    <!-- Wall background -->
-    <g id="wallBgC">
-      <rect x="0" y="0" width="60" height="50" fill="#F0F0F0" stroke="black" stroke-width="0.3"/>
-      <polygon points="0,0 60,0 66,-6 6,-6" fill="#D8D8D8" stroke="black" stroke-width="0.3"/>
-      <polygon points="60,0 66,-6 66,44 60,50" fill="#C0C0C0" stroke="black" stroke-width="0.3"/>
-      <g fill="#999" stroke="none">
-        <circle cx="10" cy="12" r="0.3"/><circle cx="25" cy="8" r="0.3"/><circle cx="42" cy="18" r="0.3"/>
-        <circle cx="18" cy="28" r="0.3"/><circle cx="36" cy="35" r="0.3"/><circle cx="50" cy="40" r="0.3"/>
-      </g>
-    </g>
-
-    <!-- Drill (twist bit + Forstner versions; this is a generic) -->
-    <g id="drillC">
-      <rect x="-3" y="-25" width="6" height="15" fill="#1976D2" stroke="black" stroke-width="0.3"/>
-      <rect x="-2" y="-10" width="4" height="3" fill="#888" stroke="black" stroke-width="0.3"/>
-      <rect x="-0.5" y="-7" width="1" height="3" fill="#666" stroke="black" stroke-width="0.2"/>
-      <rect x="-3" y="-4" width="6" height="4" fill="#999" stroke="black" stroke-width="0.3"/>
-      <polygon points="0,0 -0.5,-0.5 0.5,-0.5" fill="black"/>
-    </g>
-
-    <!-- Twist bit (thinner, longer) -->
-    <g id="twistBit">
-      <rect x="-3" y="-25" width="6" height="15" fill="#1976D2" stroke="black" stroke-width="0.3"/>
-      <rect x="-2" y="-10" width="4" height="3" fill="#888" stroke="black" stroke-width="0.3"/>
-      <rect x="-0.7" y="-7" width="1.4" height="7" fill="#666" stroke="black" stroke-width="0.2"/>
-      <polygon points="-0.7,0 0.7,0 0,2" fill="#666" stroke="black" stroke-width="0.2"/>
-    </g>
-
-    <!-- Wall anchor (plastic plug) -->
-    <g id="wallAnchor">
-      <polygon points="-1.5,0 1.5,0 1.5,12 -1.5,12" fill="#FFCDD2" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="2" x2="0" y2="10" stroke="black" stroke-width="0.4" stroke-dasharray="0.5,0.5"/>
-      <!-- expansion fins -->
-      <line x1="-1.5" y1="3" x2="-2.5" y2="6" stroke="black" stroke-width="0.2"/>
-      <line x1="1.5" y1="3" x2="2.5" y2="6" stroke="black" stroke-width="0.2"/>
-      <line x1="-1.5" y1="6" x2="-2.5" y2="9" stroke="black" stroke-width="0.2"/>
-      <line x1="1.5" y1="6" x2="2.5" y2="9" stroke="black" stroke-width="0.2"/>
-    </g>
-
-    <!-- M4 countersunk screw -->
-    <g id="screwM4">
-      <!-- Head (countersunk) -->
-      <polygon points="-4,0 4,0 1.5,4 -1.5,4" fill="#888" stroke="black" stroke-width="0.4"/>
-      <!-- Slot -->
-      <line x1="-3" y1="-0.3" x2="3" y2="-0.3" stroke="black" stroke-width="0.5"/>
-      <!-- Shaft -->
-      <rect x="-1.5" y="4" width="3" height="22" fill="#999" stroke="black" stroke-width="0.4"/>
-      <!-- Threads (zigzag) -->
-      <g stroke="black" stroke-width="0.2" fill="none">
-        <line x1="-1.5" y1="6" x2="1.5" y2="7"/>
-        <line x1="-1.5" y1="8" x2="1.5" y2="9"/>
+    <symbol id="screwM3" overflow="visible">
+      <!-- countersunk M3 × 25; head Ø7 wide × 1.5 tall (proportional). Drawn vertically. cy=0 = head top. -->
+      <path d="M -3.5 0 L 3.5 0 L 1.5 2 L -1.5 2 Z" fill="url(#metalHatch)" stroke="black" stroke-width="0.25"/>
+      <rect x="-1.5" y="2" width="3" height="22" fill="url(#metalHatch)" stroke="black" stroke-width="0.25"/>
+      <g stroke="black" stroke-width="0.13" fill="none">
+        <line x1="-1.5" y1="5" x2="1.5" y2="6"/>
+        <line x1="-1.5" y1="7.5" x2="1.5" y2="8.5"/>
         <line x1="-1.5" y1="10" x2="1.5" y2="11"/>
-        <line x1="-1.5" y1="12" x2="1.5" y2="13"/>
-        <line x1="-1.5" y1="14" x2="1.5" y2="15"/>
-        <line x1="-1.5" y1="16" x2="1.5" y2="17"/>
-        <line x1="-1.5" y1="18" x2="1.5" y2="19"/>
+        <line x1="-1.5" y1="12.5" x2="1.5" y2="13.5"/>
+        <line x1="-1.5" y1="15" x2="1.5" y2="16"/>
+        <line x1="-1.5" y1="17.5" x2="1.5" y2="18.5"/>
         <line x1="-1.5" y1="20" x2="1.5" y2="21"/>
-        <line x1="-1.5" y1="22" x2="1.5" y2="23"/>
-        <line x1="-1.5" y1="24" x2="1.5" y2="25"/>
       </g>
-      <!-- Tip -->
-      <polygon points="-1.5,26 1.5,26 0,29" fill="#999" stroke="black" stroke-width="0.4"/>
-    </g>
-
-    <!-- Screwdriver -->
-    <g id="screwdriver">
-      <rect x="-3" y="-25" width="6" height="18" fill="#D32F2F" stroke="black" stroke-width="0.3"/>
-      <rect x="-1" y="-7" width="2" height="6" fill="#888" stroke="black" stroke-width="0.3"/>
-      <rect x="-1.5" y="-1" width="3" height="2" fill="#666" stroke="black" stroke-width="0.3"/>
-    </g>
-
-    <g id="stepNumC">
-      <circle cx="0" cy="0" r="5" fill="#1976D2" stroke="black" stroke-width="0.3"/>
-    </g>
-
-    <g id="knifeMiniC">
-      <rect x="-3" y="-30" width="6" height="20" fill="#5A2A10" stroke="black" stroke-width="0.3"/>
-      <path d="M -5 -10 L 5 -10 L 4 35 L -2 40 Z" fill="#B0B0B8" stroke="black" stroke-width="0.3"/>
-    </g>
-
-    <marker id="aMarkerC" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L6,4 L0,8 L2,4 z" fill="black"/>
-    </marker>
-    <marker id="aMarkerCRed" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L6,4 L0,8 L2,4 z" fill="#D32F2F"/>
-    </marker>
+      <path d="M -1.5 24 L 0 26.5 L 1.5 24 Z" fill="url(#metalHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- Phillips X on head -->
+      <g stroke="black" stroke-width="0.2">
+        <line x1="-1.2" y1="0.6" x2="1.2" y2="0.6"/>
+        <line x1="0" y1="-0.6" x2="0" y2="1.6"/>
+      </g>
+    </symbol>
   </defs>
 
-  <rect x="5" y="5" width="200" height="287" fill="none" stroke="black" stroke-width="0.3"/>
+  <rect x="5" y="5" width="287" height="200" fill="none" stroke="black" stroke-width="0.15"/>
 
-  <!-- Title -->
-  <g>
-    <rect x="5" y="5" width="200" height="22" fill="#1976D2" stroke="black" stroke-width="0.3"/>
-    <text x="15" y="17" font-size="7" font-weight="bold" stroke="none" fill="white">MOUNT C — M4 SCREW</text>
-    <text x="15" y="23" font-size="3" stroke="none" fill="white">Universal Magnetic Knife Puck — Assembly Instructions</text>
-    <text x="200" y="17" font-size="5" text-anchor="end" stroke="none" fill="white" font-weight="bold">C</text>
-    <text x="200" y="23" font-size="2.5" text-anchor="end" stroke="none" fill="white">~15 min  ·  most secure</text>
+  <g stroke="none">
+    <text x="10" y="13" font-size="5" font-weight="bold">Mount C — M3 Screw · 6-Step Assembly</text>
+    <text x="10" y="18" font-size="2.6">Illustrative — not to scale. Use puck-drawing.svg for true dimensions. Build pucks first (see knife-puck.md §"Assembly — puck body").</text>
   </g>
 
-  <!-- ===== PARTS PANEL ===== -->
-  <g transform="translate(15, 35)">
-    <rect x="0" y="0" width="180" height="32" fill="#FAFAFA" stroke="black" stroke-width="0.3"/>
-    <text x="3" y="6" font-size="3.5" font-weight="bold" stroke="none">PARTS YOU NEED</text>
-
-    <g transform="translate(20, 22)">
-      <use href="#puckObliqueC"/>
-      <text x="0" y="20" text-anchor="middle" font-size="2.5" stroke="none">Puck × 1–4 per knife</text>
-    </g>
-
-    <g transform="translate(58, 13)">
-      <use href="#screwM4"/>
-      <text x="0" y="36" text-anchor="middle" font-size="2.5" stroke="none">M4 × 30 countersunk</text>
-      <text x="0" y="40" text-anchor="middle" font-size="2.3" stroke="none">stainless wood screw</text>
-    </g>
-
-    <g transform="translate(98, 14)">
-      <use href="#wallAnchor"/>
-      <text x="0" y="20" text-anchor="middle" font-size="2.5" stroke="none">Plastic anchor</text>
-      <text x="0" y="24" text-anchor="middle" font-size="2.3" stroke="none">(drywall only)</text>
-    </g>
-
-    <g transform="translate(140, 22)">
-      <use href="#drillC" transform="scale(0.7)"/>
-      <text x="0" y="8" text-anchor="middle" font-size="2.5" stroke="none">9 mm Forstner +</text>
-      <text x="0" y="11.5" text-anchor="middle" font-size="2.3" stroke="none">5 mm twist bit</text>
-    </g>
-
-    <g transform="translate(170, 22)">
-      <use href="#screwdriver" transform="scale(0.7)"/>
-      <text x="0" y="8" text-anchor="middle" font-size="2.5" stroke="none">Screwdriver</text>
-    </g>
+  <g fill="none" stroke="black" stroke-width="0.2">
+    <rect x="6"   y="22"  width="92" height="88"/>
+    <rect x="100" y="22"  width="92" height="88"/>
+    <rect x="194" y="22"  width="92" height="88"/>
+    <rect x="6"   y="114" width="92" height="88"/>
+    <rect x="100" y="114" width="92" height="88"/>
+    <rect x="194" y="114" width="92" height="88"/>
   </g>
 
-  <!-- ====== STEP 1: drill countersink in puck ====== -->
-  <g transform="translate(15, 75)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumC"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">1</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">DRILL PUCK COUNTERSINK</text>
+  <!-- ============ Step 1: Drill countersink in puck back ============ -->
+  <g transform="translate(52, 66)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">1</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Drill Ø7 × 1.5 countersink</text>
 
-    <g transform="translate(42.5, 38)">
-      <g transform="translate(0, 5)"><use href="#puckBackPlain"/></g>
-      <g transform="translate(0, -10)"><use href="#drillC"/></g>
-      <path d="M 0 12 L 0 5" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerC)"/>
-      <text x="20" y="0" font-size="2.5" stroke="none">Ø9 × 2 deep</text>
-      <line x1="0" y1="5" x2="18" y2="0" stroke="black" stroke-width="0.2"/>
+    <g transform="translate(0, 5)">
+      <!-- Leather strip on front (bottom of section) -->
+      <rect x="-9" y="11" width="18" height="1.5" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- Wood puck side -->
+      <rect x="-9" y="-1" width="18" height="12" fill="url(#woodHatch)" stroke="black" stroke-width="0.3"/>
+      <!-- Existing through-hole Ø4 -->
+      <line x1="-2" y1="-1" x2="-2" y2="12.5" stroke="black" stroke-width="0.2" stroke-dasharray="0.6,0.5"/>
+      <line x1="2" y1="-1" x2="2" y2="12.5" stroke="black" stroke-width="0.2" stroke-dasharray="0.6,0.5"/>
+      <!-- New countersink: Ø7 × 1.5 on top (back) face: tapered cone -->
+      <path d="M -3.5 -1 L 3.5 -1 L 2 0.5 L -2 0.5 Z" fill="white" stroke="black" stroke-width="0.3"/>
+      <!-- Depth dim -->
+      <line x1="-5" y1="-1" x2="-5" y2="0.5" stroke="black" stroke-width="0.18" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <text x="-6" y="0.4" text-anchor="end" font-size="2.0" stroke="none">1.5</text>
+      <text x="11" y="0" font-size="2.0" stroke="none">Ø7</text>
     </g>
-    <text x="42.5" y="58" text-anchor="middle" font-size="2.8" stroke="none">9 mm Forstner, 2 mm deep, over the through-hole.</text>
-    <text x="42.5" y="62" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">Test-fit screw: head should sit FLUSH.</text>
+
+    <use href="#forstner7" x="0" y="4"/>
+    <line x1="0" y1="-22" x2="0" y2="-12" stroke="#C22020" stroke-width="0.5" marker-end="url(#arrowFat)"/>
+
+    <text x="0" y="33" text-anchor="middle" font-size="2.4" stroke="none">7 mm Forstner from back, just 1.5 mm deep — head must sit flush.</text>
   </g>
 
-  <!-- ====== STEP 2: drill wall ====== -->
-  <g transform="translate(110, 75)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumC"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">2</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">DRILL WALL</text>
+  <!-- ============ Step 2: Dry-fit screw ============ -->
+  <g transform="translate(146, 66)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">2</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Dry-fit M3 × 25 — head flush</text>
 
-    <g transform="translate(42.5, 38)">
-      <g transform="translate(-30, -18)"><use href="#wallBgC"/></g>
-      <!-- Drill into wall at center -->
-      <g transform="translate(0, -22) scale(0.9)"><use href="#twistBit"/></g>
-      <path d="M 0 -2 L 0 0" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerC)"/>
-      <!-- Hole indicator -->
-      <ellipse cx="0" cy="3" rx="1.5" ry="0.5" fill="black" stroke="none"/>
+    <!-- Horizontal section: puck left, screw shaft right -->
+    <g transform="translate(-6, 0)">
+      <!-- Leather face (left) -->
+      <rect x="-12" y="-9" width="1.5" height="18" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- Wood puck -->
+      <rect x="-10.5" y="-9" width="12" height="18" fill="url(#woodHatch)" stroke="black" stroke-width="0.3"/>
+      <!-- Magnet pocket (Ø12 × 5 from front): on left side -->
+      <rect x="-10.5" y="-6" width="5" height="12" fill="url(#magnetHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- Through-hole Ø4 (white slot through center) -->
+      <rect x="-10.5" y="-2" width="12" height="4" fill="white" stroke="black" stroke-width="0.2"/>
+      <!-- Countersink on right (back) face -->
+      <path d="M 1.5 -3.5 L 1.5 3.5 L 0 1.5 L 0 -1.5 Z" fill="white" stroke="black" stroke-width="0.3"/>
     </g>
-    <text x="42.5" y="56" text-anchor="middle" font-size="2.6" stroke="none">Drywall: Ø5 hole. · Stud or wood: Ø3 pilot.</text>
-    <text x="42.5" y="60" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">Mark each puck position first.</text>
+    <!-- Screw inserted from right, head in countersink -->
+    <g transform="translate(-4.5, 0) rotate(90)">
+      <use href="#screwM3"/>
+    </g>
+    <!-- Shaft protruding 14 mm past back -->
+    <line x1="-4.5" y1="-1.5" x2="-4.5" y2="-3" stroke="black" stroke-width="0.18"/>
+
+    <!-- Annotations -->
+    <line x1="0" y1="11" x2="14" y2="11" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="7" y="14" text-anchor="middle" font-size="2.0" stroke="none">shaft protrudes ~14</text>
+    <line x1="-12" y1="-13" x2="0" y2="-13" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="-6" y="-15" text-anchor="middle" font-size="2.0" stroke="none">12 (wood)</text>
+
+    <text x="0" y="34" text-anchor="middle" font-size="2.4" stroke="none">Head must sit flush with back. Deepen c'sink in 0.3 steps if proud.</text>
   </g>
 
-  <!-- ====== STEP 3: insert anchor ====== -->
-  <g transform="translate(15, 150)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumC"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">3</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">INSERT ANCHOR</text>
-    <text x="80" y="10" font-size="2.5" text-anchor="end" stroke="none" font-style="italic">(drywall only)</text>
+  <!-- ============ Step 3: Mark wall, pre-drill ============ -->
+  <g transform="translate(240, 66)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">3</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Mark wall, pre-drill</text>
 
-    <g transform="translate(42.5, 38)">
-      <g transform="translate(-30, -18)"><use href="#wallBgC"/></g>
-      <!-- Anchor going in -->
-      <g transform="translate(0, -8)"><use href="#wallAnchor"/></g>
-      <path d="M 0 -10 L 0 -8" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerC)"/>
-      <text x="10" y="-5" font-size="2.3" stroke="none">tap in flush</text>
+    <!-- Wall -->
+    <rect x="-38" y="-26" width="76" height="52" fill="url(#drywallHatch)" stroke="black" stroke-width="0.3"/>
+
+    <!-- Two X marks 30-50 mm apart -->
+    <g stroke="#C22020" stroke-width="0.6">
+      <line x1="-3" y1="-12" x2="3" y2="-6"/>
+      <line x1="3" y1="-12" x2="-3" y2="-6"/>
+      <line x1="-3" y1="6" x2="3" y2="12"/>
+      <line x1="3" y1="6" x2="-3" y2="12"/>
     </g>
-    <text x="42.5" y="58" text-anchor="middle" font-size="2.8" stroke="none">Tap plastic anchor into the hole until flush.</text>
-    <text x="42.5" y="62" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">Skip this step if hitting a stud or wood panel.</text>
+    <line x1="-12" y1="-9" x2="-12" y2="9" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="-14" y="2" text-anchor="end" font-size="2.0" stroke="none">30–50</text>
+
+    <!-- Drill bit -->
+    <g transform="translate(0, -9) rotate(0)">
+      <rect x="-0.6" y="-20" width="1.2" height="15" fill="#9AA0A8" stroke="black" stroke-width="0.2"/>
+      <path d="M -0.6 -5 L 0 -3 L 0.6 -5 Z" fill="#909098" stroke="black" stroke-width="0.2"/>
+    </g>
+
+    <text x="0" y="32" text-anchor="middle" font-size="2.4" stroke="none">Ø4 in drywall (anchor) or Ø2.5 in stud (pilot).</text>
   </g>
 
-  <!-- ====== STEP 4: pass screw through puck ====== -->
-  <g transform="translate(110, 150)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumC"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">4</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">SCREW THROUGH PUCK</text>
+  <!-- ============ Step 4: Insert anchor ============ -->
+  <g transform="translate(52, 158)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">4</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Insert wall anchor (drywall only)</text>
 
-    <g transform="translate(42.5, 38)">
-      <!-- Puck back-up with countersink -->
-      <g transform="translate(0, 8)"><use href="#puckBackCsk"/></g>
-      <!-- Screw passing through, head going down into countersink -->
-      <g transform="translate(0, -22)"><use href="#screwM4"/></g>
-      <path d="M 0 8 L 0 6" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerC)"/>
-      <text x="15" y="0" font-size="2.4" stroke="none">head fills</text>
-      <text x="15" y="3" font-size="2.4" stroke="none">countersink</text>
-      <line x1="3" y1="6" x2="13" y2="2" stroke="black" stroke-width="0.2"/>
+    <!-- Wall section -->
+    <rect x="-38" y="-20" width="76" height="40" fill="url(#drywallHatch)" stroke="black" stroke-width="0.3"/>
+
+    <!-- Cutaway showing anchor inside -->
+    <g transform="translate(-8, 0)">
+      <path d="M -2 -16 L -2.6 16 L 2.6 16 L 2 -16 Z" fill="#E8D49A" stroke="black" stroke-width="0.3"/>
+      <!-- expansion ribs -->
+      <line x1="-2.3" y1="-8" x2="2.3" y2="-8" stroke="#8A6420" stroke-width="0.2"/>
+      <line x1="-2.4" y1="0" x2="2.4" y2="0" stroke="#8A6420" stroke-width="0.2"/>
+      <line x1="-2.5" y1="8" x2="2.5" y2="8" stroke="#8A6420" stroke-width="0.2"/>
+      <!-- collar on outside -->
+      <rect x="-3" y="-17" width="6" height="2" fill="#D8C080" stroke="black" stroke-width="0.25"/>
     </g>
-    <text x="42.5" y="58" text-anchor="middle" font-size="2.8" stroke="none">Drop screw through puck back. Shaft passes</text>
-    <text x="42.5" y="62" text-anchor="middle" font-size="2.8" stroke="none">through magnet bore — that's by design.</text>
+
+    <!-- Pre-drilled hole next to it (empty) -->
+    <g transform="translate(12, 0)">
+      <rect x="-1" y="-16" width="2" height="32" fill="white" stroke="black" stroke-width="0.2" stroke-dasharray="0.6,0.4"/>
+    </g>
+
+    <!-- Hand or finger pushing anchor in (simple arrow) -->
+    <line x1="-8" y1="-26" x2="-8" y2="-18" stroke="#C22020" stroke-width="0.6" marker-end="url(#arrowFat)"/>
+    <text x="-8" y="-28" text-anchor="middle" font-size="2.0" stroke="none" fill="#C22020">tap in</text>
+
+    <text x="0" y="32" text-anchor="middle" font-size="2.4" stroke="none">Plastic expansion anchor for M3 (drywall). Skip if hitting a stud.</text>
   </g>
 
-  <!-- ====== STEP 5: drive screw into wall ====== -->
-  <g transform="translate(15, 225)">
-    <rect x="0" y="0" width="85" height="55" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumC"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">5</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">DRIVE INTO WALL</text>
+  <!-- ============ Step 5: Drive screw through puck into anchor ============ -->
+  <g transform="translate(146, 158)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">5</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Drive screw through puck</text>
 
-    <g transform="translate(42.5, 30)">
-      <g transform="translate(-30, -15)"><use href="#wallBgC"/></g>
-      <!-- Puck stuck against wall via screw -->
-      <g transform="translate(-5, -2) rotate(-90)"><use href="#puckObliqueC"/></g>
-      <!-- Screwdriver from front -->
-      <g transform="translate(-25, -2) scale(0.7)"><use href="#screwdriver"/></g>
-      <!-- Rotation arrow -->
-      <path d="M -22 -8 A 4 4 0 1 1 -18 -8" fill="none" stroke="#D32F2F" stroke-width="0.6" marker-end="url(#aMarkerCRed)"/>
-      <text x="-20" y="6" text-anchor="middle" font-size="2.3" stroke="none" fill="#D32F2F" font-weight="bold">turn</text>
+    <!-- Wall on right -->
+    <rect x="20" y="-22" width="22" height="44" fill="url(#drywallHatch)" stroke="black" stroke-width="0.3"/>
+    <!-- Anchor in wall -->
+    <path d="M 22 -3 L 21.4 3 L 26 3 L 26.6 -3 Z" fill="#E8D49A" stroke="black" stroke-width="0.25"/>
+
+    <!-- Puck side-view, leather facing left -->
+    <g transform="translate(8, 0)">
+      <rect x="-9" y="-12" width="18" height="24" fill="url(#woodHatch)" stroke="black" stroke-width="0.3"/>
+      <rect x="-12" y="-12" width="3" height="24" fill="url(#leatherHatch)" stroke="black" stroke-width="0.3"/>
+      <!-- magnet inside -->
+      <rect x="-9" y="-5" width="5" height="10" fill="url(#magnetHatch)" stroke="black" stroke-width="0.2"/>
+      <!-- screw through center -->
+      <path d="M 9 -3.5 L 9 3.5 L 7.5 1.5 L 7.5 -1.5 Z" fill="url(#metalHatch)" stroke="black" stroke-width="0.25"/>
+      <rect x="7.5" y="-1.5" width="14" height="3" fill="url(#metalHatch)" stroke="black" stroke-width="0.25"/>
+      <g stroke="black" stroke-width="0.13" fill="none">
+        <line x1="9.5" y1="-1.5" x2="11" y2="1.5"/>
+        <line x1="12" y1="-1.5" x2="13.5" y2="1.5"/>
+        <line x1="14.5" y1="-1.5" x2="16" y2="1.5"/>
+        <line x1="17" y1="-1.5" x2="18.5" y2="1.5"/>
+      </g>
     </g>
-    <text x="42.5" y="50" text-anchor="middle" font-size="2.8" stroke="none">Drive until SNUG. Do NOT overtighten.</text>
+
+    <!-- Screwdriver from left -->
+    <g transform="translate(-22, 0)">
+      <rect x="0" y="-3" width="12" height="6" fill="#3060B0" stroke="black" stroke-width="0.25" rx="1"/>
+      <rect x="12" y="-1" width="10" height="2" fill="#9AA0A8" stroke="black" stroke-width="0.2"/>
+      <path d="M 22 -1 L 23 0 L 22 1 Z" fill="#404048" stroke="black" stroke-width="0.2"/>
+    </g>
+
+    <!-- Rotation arrow -->
+    <g transform="translate(-12, -10)">
+      <path d="M -4 0 A 4 4 0 1 1 4 0" fill="none" stroke="#C22020" stroke-width="0.4" marker-end="url(#arrowFat)"/>
+    </g>
+
+    <text x="0" y="33" text-anchor="middle" font-size="2.4" stroke="none">Steel shaft through magnet bore actually boosts pull slightly.</text>
   </g>
 
-  <!-- ====== STEP 6: hang knife ====== -->
-  <g transform="translate(110, 225)">
-    <rect x="0" y="0" width="85" height="55" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumC"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">6</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">HANG KNIFE</text>
+  <!-- ============ Step 6: Snug, do not overtighten ============ -->
+  <g transform="translate(240, 158)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">6</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Snug — do NOT overtighten</text>
 
-    <g transform="translate(42.5, 30)">
-      <g transform="translate(-30, -15)"><use href="#wallBgC"/></g>
-      <g transform="translate(-5, -2) rotate(-90)"><use href="#puckObliqueC"/></g>
-      <g transform="translate(-13, -2) scale(0.45)"><use href="#knifeMiniC"/></g>
-      <path d="M -16 -2 L -10 -2" stroke="black" stroke-width="0.4" stroke-dasharray="1,0.5" marker-end="url(#aMarkerC)"/>
+    <!-- Wall with puck installed -->
+    <rect x="-38" y="-25" width="76" height="50" fill="url(#drywallHatch)" stroke="black" stroke-width="0.3"/>
+
+    <!-- Puck flush against wall -->
+    <g transform="translate(-12, 0)">
+      <circle cx="0" cy="0" r="12" fill="url(#leatherHatch)" stroke="black" stroke-width="0.3"/>
     </g>
-    <text x="42.5" y="48" text-anchor="middle" font-size="2.8" stroke="none">Knife on. Earthquake-proof.</text>
-    <text x="42.5" y="52" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">Steel screw slightly boosts magnet pull.</text>
+
+    <!-- Caution callout box on right -->
+    <g transform="translate(14, 0)">
+      <rect x="-6" y="-12" width="22" height="24" fill="white" stroke="#C22020" stroke-width="0.4" rx="1"/>
+      <text x="5" y="-7" text-anchor="middle" font-size="2.4" stroke="none" font-weight="bold" fill="#C22020">STOP AT</text>
+      <text x="5" y="-3" text-anchor="middle" font-size="2.2" stroke="none">"firm,</text>
+      <text x="5" y="0" text-anchor="middle" font-size="2.2" stroke="none">no wobble"</text>
+      <text x="5" y="6" text-anchor="middle" font-size="1.8" stroke="none" fill="#C22020">overtight</text>
+      <text x="5" y="9" text-anchor="middle" font-size="1.8" stroke="none" fill="#C22020">→ wood cracks</text>
+    </g>
+
+    <text x="0" y="33" text-anchor="middle" font-size="2.4" stroke="none">If the puck spins free, anchor failed — pull, upsize, or move to stud.</text>
   </g>
 
-  <g transform="translate(15, 290)" stroke="none">
-    <text x="0" y="0" font-size="2.6" font-style="italic" fill="#1976D2">⚠ STOP TIGHTENING when the puck is firm against the wall. Over-driving cracks the wood around the countersink. If the puck spins freely, the anchor failed — relocate or use a larger anchor.</text>
+  <g transform="translate(146, 207)" font-size="2.2" stroke="none" text-anchor="middle">
+    <text font-weight="bold">Materials per puck:</text>
+    <text y="0" x="58">M3 × 25 c'sunk wood screw</text>
+    <text y="0" x="115">+ plastic anchor (drywall only)</text>
   </g>
 </svg>

@@ -1,274 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="210mm" height="297mm"
-     viewBox="0 0 210 297"
+     width="297mm" height="210mm"
+     viewBox="0 0 297 210"
      font-family="Helvetica, Arial, sans-serif" font-size="3" fill="black" stroke="black">
 
   <defs>
-    <!-- Puck oblique view (cylinder, leather face up) -->
-    <g id="puckObliqueB">
-      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#A0552A" stroke="black" stroke-width="0.4"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
-    </g>
-
-    <!-- Puck back-up (wood top showing through-hole) -->
-    <g id="puckBackB">
-      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="2.25" ry="0.7" fill="white" stroke="black" stroke-width="0.3"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 1 12.5 12" fill="#A0552A" stroke="black" stroke-width="0.4" opacity="0.7"/>
-    </g>
-
-    <!-- Puck back AFTER drilling 10mm socket -->
-    <g id="puckBackDrilled">
-      <rect x="-12.5" y="0" width="25" height="12" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="12.5" ry="4" fill="#E9D49E" stroke="black" stroke-width="0.4"/>
-      <!-- 10mm socket -->
-      <ellipse cx="0" cy="0" rx="5" ry="1.6" fill="#5A4020" stroke="black" stroke-width="0.4"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 0 12.5 12" fill="none" stroke="black" stroke-width="0.4"/>
-      <path d="M -12.5 12 A 12.5 4 0 0 1 12.5 12" fill="#A0552A" stroke="black" stroke-width="0.4" opacity="0.7"/>
-    </g>
-
-    <!-- Hardwood dowel (cylinder) -->
-    <g id="dowel">
-      <rect x="-5" y="0" width="10" height="10" fill="#D4A95F" stroke="black" stroke-width="0.4"/>
-      <ellipse cx="0" cy="0" rx="5" ry="1.6" fill="#E9CF9C" stroke="black" stroke-width="0.4"/>
-      <path d="M -5 10 A 5 1.6 0 0 0 5 10" fill="none" stroke="black" stroke-width="0.4"/>
-    </g>
-
-    <!-- Wall panel (3D box) -->
-    <g id="wallPanel">
-      <!-- front face -->
-      <rect x="0" y="0" width="60" height="50" fill="#E0C88A" stroke="black" stroke-width="0.4"/>
-      <!-- top face going back-up-right -->
-      <polygon points="0,0 60,0 68,-8 8,-8" fill="#C8AC60" stroke="black" stroke-width="0.4"/>
-      <!-- right face -->
-      <polygon points="60,0 68,-8 68,42 60,50" fill="#A88840" stroke="black" stroke-width="0.4"/>
-      <!-- wood grain -->
-      <g stroke="#8B6F3A" stroke-width="0.15" fill="none">
-        <path d="M 5 12 Q 30 10 55 12"/>
-        <path d="M 5 22 Q 30 20 55 22"/>
-        <path d="M 5 32 Q 30 30 55 32"/>
-        <path d="M 5 42 Q 30 40 55 42"/>
-      </g>
-    </g>
-
-    <!-- Wall (drywall background) -->
-    <g id="wallBgB">
-      <rect x="0" y="0" width="60" height="50" fill="#F0F0F0" stroke="black" stroke-width="0.3"/>
-      <polygon points="0,0 60,0 66,-6 6,-6" fill="#D8D8D8" stroke="black" stroke-width="0.3"/>
-      <polygon points="60,0 66,-6 66,44 60,50" fill="#C0C0C0" stroke="black" stroke-width="0.3"/>
-      <g fill="#999" stroke="none">
-        <circle cx="10" cy="12" r="0.3"/><circle cx="25" cy="8" r="0.3"/><circle cx="42" cy="18" r="0.3"/>
-        <circle cx="18" cy="28" r="0.3"/><circle cx="36" cy="35" r="0.3"/><circle cx="50" cy="40" r="0.3"/>
-      </g>
-    </g>
-
-    <!-- Drill (Forstner bit) -->
-    <g id="drill">
-      <!-- Drill body -->
-      <rect x="-3" y="-25" width="6" height="15" fill="#1976D2" stroke="black" stroke-width="0.3"/>
-      <!-- Chuck -->
-      <rect x="-2" y="-10" width="4" height="3" fill="#888" stroke="black" stroke-width="0.3"/>
-      <!-- Bit shaft -->
-      <rect x="-0.5" y="-7" width="1" height="3" fill="#666" stroke="black" stroke-width="0.2"/>
-      <!-- Forstner bit head -->
-      <rect x="-3" y="-4" width="6" height="4" fill="#999" stroke="black" stroke-width="0.3"/>
-      <!-- Center spur -->
-      <polygon points="0,0 -0.5,-0.5 0.5,-0.5" fill="black"/>
-    </g>
-
-    <!-- Glue bottle -->
-    <g id="glueBottle">
-      <rect x="-3" y="-12" width="6" height="9" fill="#FFE0E0" stroke="black" stroke-width="0.3"/>
-      <polygon points="-2,-12 2,-12 1,-15 -1,-15" fill="#888" stroke="black" stroke-width="0.3"/>
-      <text x="0" y="-7" text-anchor="middle" font-size="2.2" stroke="none" font-weight="bold">GLUE</text>
-      <!-- drop -->
-      <ellipse cx="0" cy="0" rx="1" ry="2" fill="#FFE0E0" stroke="black" stroke-width="0.3"/>
-    </g>
-
-    <!-- Step number -->
-    <g id="stepNumB">
-      <circle cx="0" cy="0" r="5" fill="#388E3C" stroke="black" stroke-width="0.3"/>
-    </g>
-
-    <!-- Knife mini -->
-    <g id="knifeMiniB">
-      <rect x="-3" y="-30" width="6" height="20" fill="#5A2A10" stroke="black" stroke-width="0.3"/>
-      <path d="M -5 -10 L 5 -10 L 4 35 L -2 40 Z" fill="#B0B0B8" stroke="black" stroke-width="0.3"/>
-    </g>
-
-    <marker id="aMarkerB" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L6,4 L0,8 L2,4 z" fill="black"/>
+    <pattern id="woodHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(45)">
+      <rect width="1.2" height="1.2" fill="#F3E1C0"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#A07A3A" stroke-width="0.12"/>
+    </pattern>
+    <pattern id="woodHatchDark" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(45)">
+      <rect width="1.2" height="1.2" fill="#D8B58A"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#6A4818" stroke-width="0.14"/>
+    </pattern>
+    <pattern id="leatherHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(-45)">
+      <rect width="1.2" height="1.2" fill="#C07A3A"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#5A2A10" stroke-width="0.15"/>
+    </pattern>
+    <pattern id="drywallHatch" patternUnits="userSpaceOnUse" width="1.6" height="1.6">
+      <rect width="1.6" height="1.6" fill="#F4F1EA"/>
+      <circle cx="0.4" cy="0.4" r="0.12" fill="#8A857B"/>
+      <circle cx="1.1" cy="1.0" r="0.12" fill="#8A857B"/>
+    </pattern>
+    <pattern id="bladeHatch" patternUnits="userSpaceOnUse" width="1.0" height="1.0">
+      <rect width="1.0" height="1.0" fill="#E8E8EC"/>
+      <line x1="0" y1="0" x2="1.0" y2="1.0" stroke="#6A6A72" stroke-width="0.08"/>
+    </pattern>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,3 L0,6 L1.5,3 z" fill="black"/>
     </marker>
+    <marker id="arrowFat" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,4 L0,8 L2,4 z" fill="#222"/>
+    </marker>
+
+    <symbol id="forstner" overflow="visible">
+      <!-- Cylindrical bit ~6 long, with brad point + side flutes. cy=0 is the tip. -->
+      <rect x="-3" y="-30" width="6" height="20" fill="#9AA0A8" stroke="black" stroke-width="0.25"/>
+      <rect x="-4" y="-10" width="8" height="6" fill="#C0C5CC" stroke="black" stroke-width="0.25"/>
+      <line x1="-4" y1="-7" x2="4" y2="-7" stroke="black" stroke-width="0.2"/>
+      <!-- brad point -->
+      <path d="M -4 -4 L 0 0 L 4 -4 Z" fill="#909098" stroke="black" stroke-width="0.25"/>
+    </symbol>
   </defs>
 
-  <rect x="5" y="5" width="200" height="287" fill="none" stroke="black" stroke-width="0.3"/>
+  <rect x="5" y="5" width="287" height="200" fill="none" stroke="black" stroke-width="0.15"/>
 
-  <!-- Title bar -->
-  <g>
-    <rect x="5" y="5" width="200" height="22" fill="#388E3C" stroke="black" stroke-width="0.3"/>
-    <text x="15" y="17" font-size="7" font-weight="bold" stroke="none" fill="white">MOUNT B — HIDDEN DOWEL</text>
-    <text x="15" y="23" font-size="3" stroke="none" fill="white">Universal Magnetic Knife Puck — Assembly Instructions</text>
-    <text x="200" y="17" font-size="5" text-anchor="end" stroke="none" fill="white" font-weight="bold">B</text>
-    <text x="200" y="23" font-size="2.5" text-anchor="end" stroke="none" fill="white">~30 min build  ·  overnight glue cure</text>
+  <g stroke="none">
+    <text x="10" y="13" font-size="5" font-weight="bold">Mount B — Hidden Dowel · 6-Step Assembly</text>
+    <text x="10" y="18" font-size="2.6">Illustrative — not to scale. Use puck-drawing.svg for true dimensions. Build pucks first (see knife-puck.md §"Assembly — puck body").</text>
   </g>
 
-  <!-- ===== PARTS PANEL ===== -->
-  <g transform="translate(15, 35)">
-    <rect x="0" y="0" width="180" height="32" fill="#FAFAFA" stroke="black" stroke-width="0.3"/>
-    <text x="3" y="6" font-size="3.5" font-weight="bold" stroke="none">PARTS YOU NEED</text>
-
-    <g transform="translate(20, 22)">
-      <use href="#puckObliqueB"/>
-      <text x="0" y="20" text-anchor="middle" font-size="2.5" stroke="none">Puck × 1–4 per knife</text>
-    </g>
-
-    <g transform="translate(58, 22)">
-      <g transform="translate(-3,0)"><use href="#dowel"/></g>
-      <text x="0" y="20" text-anchor="middle" font-size="2.5" stroke="none">10 mm dowel × 10 mm</text>
-    </g>
-
-    <g transform="translate(95, 26)">
-      <g transform="scale(0.4)"><use href="#wallPanel"/></g>
-      <text x="12" y="-2" text-anchor="middle" font-size="2.5" stroke="none">Hardwood back panel</text>
-      <text x="12" y="2" text-anchor="middle" font-size="2.3" stroke="none">(≥15 mm thick)</text>
-    </g>
-
-    <g transform="translate(140, 22)">
-      <use href="#glueBottle"/>
-      <text x="0" y="8" text-anchor="middle" font-size="2.5" stroke="none">Wood glue</text>
-    </g>
-
-    <g transform="translate(170, 22)">
-      <use href="#drill" transform="scale(0.7)"/>
-      <text x="0" y="8" text-anchor="middle" font-size="2.5" stroke="none">10 mm Forstner</text>
-    </g>
+  <g fill="none" stroke="black" stroke-width="0.2">
+    <rect x="6"   y="22"  width="92" height="88"/>
+    <rect x="100" y="22"  width="92" height="88"/>
+    <rect x="194" y="22"  width="92" height="88"/>
+    <rect x="6"   y="114" width="92" height="88"/>
+    <rect x="100" y="114" width="92" height="88"/>
+    <rect x="194" y="114" width="92" height="88"/>
   </g>
 
-  <!-- ====== STEP 1 ====== -->
-  <g transform="translate(15, 75)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumB"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">1</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">DRILL PUCK BACK</text>
+  <!-- ============ Step 1: Drill back pocket in puck ============ -->
+  <g transform="translate(52, 66)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">1</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Drill Ø8 × 5 socket in puck back</text>
 
-    <g transform="translate(42.5, 38)">
-      <!-- Puck back-up -->
-      <g transform="translate(0, 5)"><use href="#puckBackB"/></g>
-      <!-- Drill coming down -->
-      <g transform="translate(0, -10)"><use href="#drill"/></g>
-      <!-- Down arrow -->
-      <path d="M 0 12 L 0 5" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerB)"/>
-      <!-- callout -->
-      <text x="20" y="0" font-size="2.5" stroke="none">Ø10 × 5 deep</text>
-      <line x1="0" y1="5" x2="18" y2="0" stroke="black" stroke-width="0.2"/>
+    <!-- Section through puck (side view), wall side = top -->
+    <g transform="translate(0, 5)">
+      <!-- Front leather strip (bottom) -->
+      <rect x="-9" y="11" width="18" height="1.5" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- Wood puck side-view -->
+      <rect x="-9" y="-1" width="18" height="12" fill="url(#woodHatch)" stroke="black" stroke-width="0.3"/>
+      <!-- Existing magnet pocket inside (faint) -->
+      <rect x="-6" y="9" width="12" height="-5" transform="translate(0, 0)" fill="white" stroke="black" stroke-width="0.18" stroke-dasharray="0.8,0.5" opacity="0.5"/>
+      <!-- New back pocket Ø8 × 5: from y=-1 (top) down 5 -->
+      <rect x="-4" y="-1" width="8" height="5" fill="white" stroke="black" stroke-width="0.3"/>
+      <text x="11" y="2" font-size="2.0" stroke="none">Ø8 × 5</text>
+      <!-- Depth dim -->
+      <line x1="-6" y1="-1" x2="-6" y2="4" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <text x="-7" y="3" text-anchor="end" font-size="2.0" stroke="none">5</text>
     </g>
-    <text x="42.5" y="58" text-anchor="middle" font-size="2.8" stroke="none">Puck back-up. Drill 10 mm Forstner, 5 mm deep, centered.</text>
-    <text x="42.5" y="62" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">Aim for friction fit on the dowel.</text>
+
+    <!-- Forstner descending -->
+    <use href="#forstner" x="0" y="4"/>
+    <line x1="0" y1="-22" x2="0" y2="-12" stroke="#C22020" stroke-width="0.5" marker-end="url(#arrowFat)"/>
+
+    <text x="0" y="33" text-anchor="middle" font-size="2.4" stroke="none">8 mm Forstner from puck back, centered on through-hole pilot.</text>
   </g>
 
-  <!-- ====== STEP 2 ====== -->
-  <g transform="translate(110, 75)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumB"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">2</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">DRILL PANEL HOLES</text>
+  <!-- ============ Step 2: Drill holes in wall panel ============ -->
+  <g transform="translate(146, 66)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">2</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Drill matching holes in panel</text>
 
-    <g transform="translate(42.5, 35)">
-      <!-- Wall panel laid flat -->
-      <g transform="translate(-25, -8) scale(0.7)"><use href="#wallPanel"/></g>
-      <!-- Drilled holes (small ellipses) -->
-      <ellipse cx="-12" cy="-2" rx="2.5" ry="0.8" fill="#3A2810" stroke="black" stroke-width="0.3"/>
-      <ellipse cx="0" cy="-2" rx="2.5" ry="0.8" fill="#3A2810" stroke="black" stroke-width="0.3"/>
-      <ellipse cx="12" cy="-2" rx="2.5" ry="0.8" fill="#3A2810" stroke="black" stroke-width="0.3"/>
-      <!-- Drill above -->
-      <g transform="translate(0, -22)"><use href="#drill"/></g>
-      <!-- Down arrow -->
-      <path d="M 0 -3 L 0 -2.5" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerB)"/>
+    <!-- Wall panel front-view -->
+    <rect x="-32" y="-22" width="64" height="44" fill="url(#woodHatchDark)" stroke="black" stroke-width="0.35"/>
+
+    <!-- Grid of dowel hole positions (2 knives × 2 pucks each) -->
+    <g>
+      <circle cx="-18" cy="-10" r="2" fill="white" stroke="black" stroke-width="0.25"/>
+      <circle cx="-18" cy="8" r="2" fill="white" stroke="black" stroke-width="0.25"/>
+      <circle cx="0" cy="-10" r="2" fill="white" stroke="black" stroke-width="0.25"/>
+      <circle cx="0" cy="8" r="2" fill="white" stroke="black" stroke-width="0.25"/>
+      <circle cx="18" cy="-10" r="2" fill="white" stroke="black" stroke-width="0.25"/>
+      <circle cx="18" cy="8" r="2" fill="white" stroke="black" stroke-width="0.25"/>
     </g>
-    <text x="42.5" y="58" text-anchor="middle" font-size="2.8" stroke="none">Drill Ø10 × 5–8 mm deep at each puck position.</text>
-    <text x="42.5" y="62" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">See wall-panel-drilling-guide.svg for layout.</text>
+    <!-- spacing callout -->
+    <line x1="-18" y1="14" x2="0" y2="14" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="-9" y="19" text-anchor="middle" font-size="2.0" stroke="none">knife pitch</text>
+    <line x1="-26" y1="-10" x2="-26" y2="8" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="-28" y="0" text-anchor="end" font-size="2.0" stroke="none">30–50</text>
+
+    <!-- Forstner above one hole -->
+    <use href="#forstner" x="0" y="-12"/>
+
+    <text x="0" y="33" text-anchor="middle" font-size="2.4" stroke="none">8 mm Forstner, 5 mm deep. Drill press with depth stop.</text>
   </g>
 
-  <!-- ====== STEP 3 ====== -->
-  <g transform="translate(15, 150)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumB"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">3</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">GLUE DOWELS</text>
+  <!-- ============ Step 3: Glue dowels in, 5 mm proud ============ -->
+  <g transform="translate(240, 66)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">3</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Glue dowels — leave 5 mm proud</text>
 
-    <g transform="translate(42.5, 35)">
-      <!-- Panel front-on -->
-      <g transform="translate(-25, -8) scale(0.7)"><use href="#wallPanel"/></g>
-      <!-- Glue applied with dowel going in -->
-      <g transform="translate(0, -8)"><use href="#glueBottle"/></g>
-      <g transform="translate(0, -2) scale(0.8)"><use href="#dowel"/></g>
-      <!-- Down arrow -->
-      <path d="M 0 6 L 0 -3" stroke="black" stroke-width="0.8" marker-end="url(#aMarkerB)"/>
+    <!-- Section through panel (panel = thick block, dowels project out) -->
+    <g transform="translate(0, 4)">
+      <rect x="-30" y="0" width="60" height="14" fill="url(#woodHatchDark)" stroke="black" stroke-width="0.3"/>
+      <!-- Three dowels: half in panel, half sticking out (5 in, 5 out) -->
+      <g>
+        <!-- dowel 1 -->
+        <rect x="-22" y="-10" width="4" height="14" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+        <ellipse cx="-20" cy="-10" rx="2" ry="0.7" fill="url(#woodHatch)" stroke="black" stroke-width="0.2"/>
+        <!-- glue at bottom -->
+        <rect x="-22" y="9" width="4" height="3" fill="#FFE090" stroke="none" opacity="0.6"/>
+        <!-- dowel 2 -->
+        <rect x="-2" y="-10" width="4" height="14" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+        <ellipse cx="0" cy="-10" rx="2" ry="0.7" fill="url(#woodHatch)" stroke="black" stroke-width="0.2"/>
+        <rect x="-2" y="9" width="4" height="3" fill="#FFE090" stroke="none" opacity="0.6"/>
+        <!-- dowel 3 -->
+        <rect x="18" y="-10" width="4" height="14" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+        <ellipse cx="20" cy="-10" rx="2" ry="0.7" fill="url(#woodHatch)" stroke="black" stroke-width="0.2"/>
+        <rect x="18" y="9" width="4" height="3" fill="#FFE090" stroke="none" opacity="0.6"/>
+      </g>
+      <!-- Dim: 5 in / 5 out -->
+      <line x1="6" y1="-10" x2="6" y2="-4" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <line x1="6" y1="-4" x2="6" y2="4" stroke="black" stroke-width="0.2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <text x="8" y="-5" font-size="2.0" stroke="none">5 proud</text>
+      <text x="8" y="3" font-size="2.0" stroke="none">5 in panel</text>
+      <text x="-32" y="-12" font-size="2.0" stroke="none">Ø8 dowels × 10 mm</text>
     </g>
-    <text x="42.5" y="58" text-anchor="middle" font-size="2.8" stroke="none">Glue dowels into holes. 5 mm sticks out.</text>
-    <text x="42.5" y="62" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">Let cure overnight before Step 5.</text>
+
+    <text x="0" y="33" text-anchor="middle" font-size="2.4" stroke="none">Wood glue in hole, tap dowel home, wipe squeeze-out. Cure overnight.</text>
   </g>
 
-  <!-- ====== STEP 4 ====== -->
-  <g transform="translate(110, 150)">
-    <rect x="0" y="0" width="85" height="65" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumB"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">4</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">MOUNT PANEL TO WALL</text>
+  <!-- ============ Step 4: Mount panel to wall ============ -->
+  <g transform="translate(52, 158)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">4</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Mount panel to wall</text>
 
-    <g transform="translate(42.5, 38)">
-      <!-- Wall background -->
-      <g transform="translate(-30, -20)"><use href="#wallBgB"/></g>
-      <!-- Panel attaching -->
-      <g transform="translate(-22, -15) scale(0.85)"><use href="#wallPanel"/></g>
-      <!-- Dowels protruding from panel -->
-      <ellipse cx="-15" cy="-10" rx="2" ry="0.6" fill="#E9CF9C" stroke="black" stroke-width="0.3"/>
-      <ellipse cx="-5" cy="-10" rx="2" ry="0.6" fill="#E9CF9C" stroke="black" stroke-width="0.3"/>
-      <ellipse cx="5" cy="-10" rx="2" ry="0.6" fill="#E9CF9C" stroke="black" stroke-width="0.3"/>
+    <!-- Wall background -->
+    <rect x="-38" y="-26" width="76" height="52" fill="url(#drywallHatch)" stroke="black" stroke-width="0.25"/>
+
+    <!-- Panel hanging on wall -->
+    <rect x="-26" y="-18" width="52" height="36" fill="url(#woodHatchDark)" stroke="black" stroke-width="0.35"/>
+
+    <!-- French cleat indicator (45° wedge behind top edge) -->
+    <g transform="translate(0, -8)">
+      <path d="M -22 0 L 22 0 L 22 4 L -18 4 Z" fill="#7A5530" stroke="black" stroke-width="0.25" opacity="0.8"/>
+      <line x1="-22" y1="0" x2="-18" y2="4" stroke="black" stroke-width="0.25" stroke-dasharray="0.6,0.5"/>
     </g>
-    <text x="42.5" y="56" text-anchor="middle" font-size="2.8" stroke="none">French cleat, screws, or construction adhesive.</text>
-    <text x="42.5" y="60" text-anchor="middle" font-size="2.4" stroke="none" font-style="italic">Panel size and shape are your choice.</text>
+    <text x="26" y="-6" font-size="2.0" stroke="none">French cleat</text>
+    <line x1="14" y1="-6" x2="22" y2="-6" stroke="black" stroke-width="0.2"/>
+
+    <!-- Visible dowels poking out of panel front -->
+    <g fill="url(#woodHatch)" stroke="black" stroke-width="0.2">
+      <circle cx="-16" cy="-4" r="1.6"/>
+      <circle cx="-16" cy="10" r="1.6"/>
+      <circle cx="0" cy="-4" r="1.6"/>
+      <circle cx="0" cy="10" r="1.6"/>
+      <circle cx="16" cy="-4" r="1.6"/>
+      <circle cx="16" cy="10" r="1.6"/>
+    </g>
+
+    <text x="0" y="32" text-anchor="middle" font-size="2.4" stroke="none">Cleat, adhesive, or screws through panel into studs.</text>
   </g>
 
-  <!-- ====== STEP 5 ====== -->
-  <g transform="translate(15, 225)">
-    <rect x="0" y="0" width="85" height="55" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumB"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">5</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">PRESS PUCK ON DOWEL</text>
+  <!-- ============ Step 5: Friction-fit puck onto dowel ============ -->
+  <g transform="translate(146, 158)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">5</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Press puck onto dowel</text>
 
-    <g transform="translate(42.5, 30)">
-      <!-- Wall + panel + dowel exposed -->
-      <g transform="translate(-30, -15) scale(0.6)"><use href="#wallBgB"/></g>
-      <rect x="-22" y="-9" width="40" height="6" fill="#E0C88A" stroke="black" stroke-width="0.3"/>
-      <rect x="-2" y="-3" width="4" height="3" fill="#E9CF9C" stroke="black" stroke-width="0.3"/>
-      <!-- Puck approaching from front (left) -->
-      <g transform="translate(-15, -2) rotate(-90)"><use href="#puckBackDrilled"/></g>
-      <!-- Push arrow toward dowel -->
-      <path d="M -2 0 L 8 0" stroke="black" stroke-width="1.2" marker-end="url(#aMarkerB)"/>
-      <text x="3" y="-8" text-anchor="middle" font-size="2.5" stroke="none" font-weight="bold">PUSH</text>
+    <!-- Wall panel slice on right -->
+    <rect x="22" y="-25" width="22" height="50" fill="url(#woodHatchDark)" stroke="black" stroke-width="0.3"/>
+    <!-- Dowel protruding -->
+    <rect x="14" y="-2" width="8" height="4" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+
+    <!-- Puck approaching from left, side-view -->
+    <g transform="translate(0, 0)">
+      <rect x="-9" y="-12" width="18" height="24" fill="url(#woodHatch)" stroke="black" stroke-width="0.3"/>
+      <rect x="-12" y="-12" width="3" height="24" fill="url(#leatherHatch)" stroke="black" stroke-width="0.3"/>
+      <!-- Back socket on right (Ø8 × 5) -->
+      <rect x="5" y="-4" width="4" height="8" fill="white" stroke="black" stroke-width="0.25"/>
     </g>
-    <text x="42.5" y="50" text-anchor="middle" font-size="2.8" stroke="none">Align hole over dowel and push firmly until seated.</text>
+
+    <!-- Pressing arrow -->
+    <line x1="-20" y1="0" x2="-12" y2="0" stroke="#C22020" stroke-width="0.6" marker-end="url(#arrowFat)"/>
+
+    <text x="0" y="35" text-anchor="middle" font-size="2.4" stroke="none">Firm friction fit (~1–2 kg pull-off). Dip in glue if too loose.</text>
   </g>
 
-  <!-- ====== STEP 6 ====== -->
-  <g transform="translate(110, 225)">
-    <rect x="0" y="0" width="85" height="55" fill="white" stroke="black" stroke-width="0.3"/>
-    <g transform="translate(8, 8)"><use href="#stepNumB"/><text x="0" y="1.5" text-anchor="middle" font-size="5" font-weight="bold" fill="white" stroke="none">6</text></g>
-    <text x="18" y="10" font-size="3.5" font-weight="bold" stroke="none">HANG KNIFE</text>
+  <!-- ============ Step 6: Hang knife ============ -->
+  <g transform="translate(240, 158)">
+    <text x="-44" y="-39" font-size="4" font-weight="bold" stroke="none">6</text>
+    <text x="-37" y="-39" font-size="2.8" font-weight="bold" stroke="none">Hang the knife</text>
 
-    <g transform="translate(42.5, 30)">
-      <g transform="translate(-30, -15) scale(0.6)"><use href="#wallBgB"/></g>
-      <rect x="-22" y="-9" width="40" height="6" fill="#E0C88A" stroke="black" stroke-width="0.3"/>
-      <!-- Puck on panel -->
-      <g transform="translate(-5, -2) rotate(-90)"><use href="#puckObliqueB"/></g>
-      <!-- Knife floating -->
-      <g transform="translate(-13, -2) scale(0.45)"><use href="#knifeMiniB"/></g>
-      <path d="M -16 -2 L -10 -2" stroke="black" stroke-width="0.4" stroke-dasharray="1,0.5" marker-end="url(#aMarkerB)"/>
+    <!-- Wall + panel -->
+    <rect x="-38" y="-26" width="76" height="52" fill="url(#drywallHatch)" stroke="black" stroke-width="0.25"/>
+    <rect x="-26" y="-22" width="52" height="44" fill="url(#woodHatchDark)" stroke="black" stroke-width="0.35"/>
+
+    <!-- Knife silhouette vertical centered on column 2 -->
+    <g transform="translate(-12, 0)">
+      <path d="M -3 -19 L 3 -19 L 5 -16 L 5 10 L 4 12 L -4 12 L -5 10 L -5 -16 Z" fill="url(#bladeHatch)" stroke="black" stroke-width="0.3"/>
+      <rect x="-3" y="12" width="6" height="9" fill="#7A5530" stroke="black" stroke-width="0.3"/>
+      <rect x="-3.5" y="10" width="7" height="2" fill="#404040" stroke="black" stroke-width="0.2"/>
     </g>
-    <text x="42.5" y="50" text-anchor="middle" font-size="2.8" stroke="none">Knife on. Wood backing is invisible.</text>
+
+    <!-- Pucks behind blade (dashed) -->
+    <circle cx="-12" cy="-7" r="3.5" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray="0.8,0.6"/>
+    <circle cx="-12" cy="6" r="3.5" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray="0.8,0.6"/>
+
+    <!-- Spare dowel cluster -->
+    <g fill="url(#woodHatch)" stroke="black" stroke-width="0.2">
+      <circle cx="6" cy="-7" r="1.6"/>
+      <circle cx="6" cy="6" r="1.6"/>
+      <circle cx="20" cy="-7" r="1.6"/>
+      <circle cx="20" cy="6" r="1.6"/>
+    </g>
+    <text x="14" y="22" text-anchor="middle" font-size="2.0" stroke="none">spare dowels for second knife →</text>
+
+    <text x="0" y="33" text-anchor="middle" font-size="2.4" stroke="none">Blade hides the pucks. Panel is the only visible feature.</text>
   </g>
 
-  <g transform="translate(15, 290)" stroke="none">
-    <text x="0" y="0" font-size="2.6" font-style="italic" fill="#388E3C">✓ Cleanest "levitating" look. Pucks lift off the dowels for cleaning. If too loose, dip dowel in glue before pressing on.</text>
+  <g transform="translate(146, 207)" font-size="2.2" stroke="none" text-anchor="middle">
+    <text font-weight="bold">Materials per puck:</text>
+    <text y="0" x="58">Ø8 dowel × 10 mm</text>
+    <text y="0" x="100">+ wood glue</text>
+    <text y="0" x="138">+ shared hardwood panel ≥15 mm</text>
   </g>
 </svg>

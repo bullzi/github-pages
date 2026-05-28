@@ -5,252 +5,311 @@
      font-family="Helvetica, Arial, sans-serif" font-size="3" fill="black" stroke="black">
 
   <defs>
-    <pattern id="woodAS" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(45)">
+    <pattern id="woodHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(45)">
       <rect width="1.2" height="1.2" fill="#F3E1C0"/>
       <line x1="0" y1="0" x2="0" y2="1.2" stroke="#A07A3A" stroke-width="0.12"/>
     </pattern>
-    <pattern id="panelAS" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(-45)">
-      <rect width="1.2" height="1.2" fill="#E0C88A"/>
-      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#805028" stroke-width="0.12"/>
-    </pattern>
-    <pattern id="wallAS" patternUnits="userSpaceOnUse" width="2" height="2">
-      <rect width="2" height="2" fill="#EEEEEE"/>
-      <circle cx="1" cy="1" r="0.15" fill="#888" stroke="none"/>
-    </pattern>
-    <pattern id="leatherAS" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(-45)">
-      <rect width="1.2" height="1.2" fill="#C07A3A"/>
-      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#5A2A10" stroke-width="0.15"/>
-    </pattern>
-    <pattern id="magnetAS" patternUnits="userSpaceOnUse" width="0.8" height="0.8" patternTransform="rotate(45)">
+    <pattern id="magnetHatch" patternUnits="userSpaceOnUse" width="0.8" height="0.8" patternTransform="rotate(45)">
       <rect width="0.8" height="0.8" fill="#B0B0B8"/>
       <line x1="0" y1="0" x2="0" y2="0.8" stroke="#303036" stroke-width="0.12"/>
       <line x1="0" y1="0" x2="0.8" y2="0" stroke="#303036" stroke-width="0.12"/>
     </pattern>
+    <pattern id="leatherHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(-45)">
+      <rect width="1.2" height="1.2" fill="#C07A3A"/>
+      <line x1="0" y1="0" x2="0" y2="1.2" stroke="#5A2A10" stroke-width="0.15"/>
+    </pattern>
+    <pattern id="metalHatch" patternUnits="userSpaceOnUse" width="0.7" height="0.7" patternTransform="rotate(30)">
+      <rect width="0.7" height="0.7" fill="#D0D0D6"/>
+      <line x1="0" y1="0" x2="0" y2="0.7" stroke="#404048" stroke-width="0.1"/>
+    </pattern>
+    <pattern id="drywallHatch" patternUnits="userSpaceOnUse" width="1.6" height="1.6">
+      <rect width="1.6" height="1.6" fill="#F4F1EA"/>
+      <circle cx="0.4" cy="0.4" r="0.12" fill="#8A857B"/>
+      <circle cx="1.1" cy="1.0" r="0.12" fill="#8A857B"/>
+    </pattern>
+    <pattern id="tapeHatch" patternUnits="userSpaceOnUse" width="1.2" height="1.2" patternTransform="rotate(0)">
+      <rect width="1.2" height="1.2" fill="#F4A8A8"/>
+      <line x1="0" y1="0.6" x2="1.2" y2="0.6" stroke="#A24040" stroke-width="0.12"/>
+    </pattern>
+    <pattern id="bladeHatch" patternUnits="userSpaceOnUse" width="1.0" height="1.0">
+      <rect width="1.0" height="1.0" fill="#E8E8EC"/>
+      <line x1="0" y1="0" x2="1.0" y2="1.0" stroke="#6A6A72" stroke-width="0.08"/>
+    </pattern>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,3 L0,6 L1.5,3 z" fill="black"/>
+    </marker>
   </defs>
 
   <rect x="5" y="5" width="287" height="200" fill="none" stroke="black" stroke-width="0.15"/>
 
-  <g stroke="none">
-    <text x="148.5" y="14" text-anchor="middle" font-size="5" font-weight="bold">Assembly — Three Mount Options</text>
-    <text x="148.5" y="19" text-anchor="middle" font-size="2.8">Exploded stack-ups. Same puck body for all three. Orientation: knife on left, wall on right.</text>
+  <g font-family="Helvetica, Arial, sans-serif" stroke="none">
+    <text x="10" y="13" font-size="5" font-weight="bold">Magnetic Knife Puck v2 — Exploded Stack-up, All Three Mounts</text>
+    <text x="10" y="18" font-size="2.8">From top (knife) to bottom (wall). Items are shown 2× actual size for clarity. Use puck-drawing.svg for true 1:1 dimensions.</text>
+    <text x="10" y="22" font-size="2.8">Each puck is Ø18 × 12 mm hardwood + 1 mm leather; magnet is N52 ring 12 × 5 × 4 mm. Use two pucks per knife as the default.</text>
   </g>
 
-  <!-- ================ MOUNT A: VHB ================ -->
-  <g transform="translate(50, 55)">
-    <text x="0" y="-25" text-anchor="middle" font-size="4" font-weight="bold" stroke="none">Mount A — VHB Tape</text>
+  <!-- Column separators -->
+  <line x1="105" y1="28" x2="105" y2="190" stroke="black" stroke-width="0.1" stroke-dasharray="1.5,1"/>
+  <line x1="192" y1="28" x2="192" y2="190" stroke="black" stroke-width="0.1" stroke-dasharray="1.5,1"/>
 
-    <!-- Knife (just a blade edge symbol) -->
-    <g transform="translate(-55, 0)">
-      <rect x="0" y="-15" width="10" height="30" fill="#BBBBBB" stroke="black" stroke-width="0.2"/>
-      <text x="5" y="20" text-anchor="middle" font-size="2.3" stroke="none">knife blade</text>
-    </g>
-
-    <!-- Leather disc -->
-    <g transform="translate(-30, 0)">
-      <rect x="0" y="-12.5" width="1" height="25" fill="url(#leatherAS)" stroke="black" stroke-width="0.2"/>
-      <text x="0.5" y="-14" text-anchor="middle" font-size="2.3" stroke="none">leather</text>
-      <text x="0.5" y="17" text-anchor="middle" font-size="2.3" stroke="none">1 mm</text>
-    </g>
-
-    <!-- Puck body (wood) with magnet -->
-    <g transform="translate(-20, 0)">
-      <!-- Wood body -->
-      <rect x="0" y="-12.5" width="12" height="25" fill="url(#woodAS)" stroke="black" stroke-width="0.3"/>
-      <!-- Magnet pocket cut out -->
-      <rect x="2" y="-10" width="5" height="20" fill="white" stroke="none"/>
-      <rect x="2" y="-10" width="5" height="7.75" fill="url(#magnetAS)" stroke="black" stroke-width="0.25"/>
-      <rect x="2" y="2.25" width="5" height="7.75" fill="url(#magnetAS)" stroke="black" stroke-width="0.25"/>
-      <!-- Through-hole -->
-      <rect x="0" y="-2.25" width="12" height="4.5" fill="white" stroke="none"/>
-      <line x1="0" y1="-2.25" x2="12" y2="-2.25" stroke="black" stroke-width="0.2"/>
-      <line x1="0" y1="2.25" x2="12" y2="2.25" stroke="black" stroke-width="0.2"/>
-      <!-- Re-outline puck body -->
-      <line x1="0" y1="-12.5" x2="12" y2="-12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="12.5" x2="12" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="-12.5" x2="0" y2="-2.25" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="2.25" x2="0" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="12" y1="-12.5" x2="12" y2="-2.25" stroke="black" stroke-width="0.3"/>
-      <line x1="12" y1="2.25" x2="12" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <text x="6" y="-14" text-anchor="middle" font-size="2.3" stroke="none">wood + magnet</text>
-      <text x="6" y="17" text-anchor="middle" font-size="2.3" stroke="none">12 mm</text>
-    </g>
-
-    <!-- VHB tape -->
-    <g transform="translate(-5, 0)">
-      <rect x="0" y="-10" width="1" height="20" fill="#EEDD88" stroke="black" stroke-width="0.2"/>
-      <text x="0.5" y="-12" text-anchor="middle" font-size="2.3" stroke="none">VHB</text>
-      <text x="0.5" y="14.5" text-anchor="middle" font-size="2.3" stroke="none">1 mm</text>
-    </g>
-
-    <!-- Wall -->
-    <g transform="translate(3, 0)">
-      <rect x="0" y="-20" width="20" height="40" fill="url(#wallAS)" stroke="black" stroke-width="0.2"/>
-      <text x="10" y="24" text-anchor="middle" font-size="2.3" stroke="none">wall</text>
-    </g>
-
-    <!-- Connecting dotted lines to show assembly -->
-    <g stroke="#999" stroke-width="0.15" stroke-dasharray="1,0.5">
-      <line x1="-45" y1="0" x2="-30" y2="0"/>
-      <line x1="-29" y1="0" x2="-20" y2="0"/>
-      <line x1="-8" y1="0" x2="-5" y2="0"/>
-      <line x1="-4" y1="0" x2="3" y2="0"/>
-    </g>
+  <!-- Column headers -->
+  <g font-weight="bold" font-size="3.8" stroke="none" text-anchor="middle">
+    <text x="55" y="32">A · VHB TAPE</text>
+    <text x="148.5" y="32">B · HIDDEN DOWEL</text>
+    <text x="240" y="32">C · M3 SCREW</text>
+  </g>
+  <g font-size="2.4" stroke="none" text-anchor="middle" fill="#444">
+    <text x="55" y="36">easiest, low commitment</text>
+    <text x="148.5" y="36">cleanest "levitating" look</text>
+    <text x="240" y="36">most secure</text>
   </g>
 
-  <!-- ================ MOUNT B: DOWEL ================ -->
-  <g transform="translate(148.5, 55)">
-    <text x="0" y="-25" text-anchor="middle" font-size="4" font-weight="bold" stroke="none">Mount B — Wood Dowel + Hidden Panel</text>
+  <!-- ========================================================== -->
+  <!-- COMMON STACK GEOMETRY (per column, oblique projection)     -->
+  <!-- ellipse ry = rx * 0.28 for top of cylinder                 -->
+  <!-- ========================================================== -->
 
-    <!-- Knife -->
-    <g transform="translate(-55, 0)">
-      <rect x="0" y="-15" width="10" height="30" fill="#BBBBBB" stroke="black" stroke-width="0.2"/>
-      <text x="5" y="20" text-anchor="middle" font-size="2.3" stroke="none">knife blade</text>
+  <!-- Helper macro repeated three times: 0=A center, 1=B center, 2=C center -->
+  <!-- We'll draw three columns explicitly with parametric coordinates -->
+
+  <!-- =================== COLUMN A: VHB =================== -->
+  <g transform="translate(55, 0)">
+    <!-- Center axis -->
+    <line x1="0" y1="42" x2="0" y2="186" stroke="black" stroke-width="0.1" stroke-dasharray="2,1,0.4,1"/>
+
+    <!-- Knife blade silhouette: rectangle 60 wide x 4 tall -->
+    <g transform="translate(0, 45)">
+      <path d="M -30 -2 L 28 -2 L 30 0 L 28 2 L -30 2 Z" fill="url(#bladeHatch)" stroke="black" stroke-width="0.2"/>
+      <text x="34" y="1" font-size="2.4" stroke="none">knife blade</text>
     </g>
 
-    <!-- Leather -->
-    <g transform="translate(-30, 0)">
-      <rect x="0" y="-12.5" width="1" height="25" fill="url(#leatherAS)" stroke="black" stroke-width="0.2"/>
-      <text x="0.5" y="-14" text-anchor="middle" font-size="2.3" stroke="none">leather</text>
+    <!-- Air gap with field arcs -->
+    <g transform="translate(0, 55)" stroke="#888" fill="none" stroke-width="0.18">
+      <path d="M -6 0 Q 0 -3 6 0" stroke-dasharray="0.8,0.6"/>
+      <path d="M -10 0 Q 0 -5 10 0" stroke-dasharray="0.8,0.6"/>
+      <path d="M -14 0 Q 0 -7 14 0" stroke-dasharray="0.8,0.6"/>
+      <text x="18" y="-1" font-size="2.2" stroke="none" fill="#444">~3 mm air + field</text>
     </g>
 
-    <!-- Puck body (with dowel socket on back) -->
-    <g transform="translate(-20, 0)">
-      <rect x="0" y="-12.5" width="12" height="25" fill="url(#woodAS)" stroke="black" stroke-width="0.3"/>
-      <!-- Magnet pocket -->
-      <rect x="2" y="-10" width="5" height="20" fill="white" stroke="none"/>
-      <rect x="2" y="-10" width="5" height="7.75" fill="url(#magnetAS)" stroke="black" stroke-width="0.25"/>
-      <rect x="2" y="2.25" width="5" height="7.75" fill="url(#magnetAS)" stroke="black" stroke-width="0.25"/>
-      <!-- 10mm dowel socket on back (5mm deep) -->
-      <rect x="7" y="-5" width="5" height="10" fill="white" stroke="black" stroke-width="0.3"/>
-      <!-- re-outline -->
-      <line x1="0" y1="-12.5" x2="12" y2="-12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="12.5" x2="12" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="-12.5" x2="0" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="12" y1="-12.5" x2="12" y2="-5" stroke="black" stroke-width="0.3"/>
-      <line x1="12" y1="5" x2="12" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <text x="6" y="-14" text-anchor="middle" font-size="2.3" stroke="none">puck w/ socket</text>
+    <!-- Leather disc Ø18 x 1 — scaled 2x so OD 36, thickness 2 -->
+    <g transform="translate(0, 65)">
+      <ellipse cx="0" cy="0" rx="18" ry="5" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+      <path d="M -18 0 L -18 2 A 18 5 0 0 0 18 2 L 18 0" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+      <text x="22" y="1" font-size="2.4" stroke="none">leather Ø18 × 1</text>
     </g>
 
-    <!-- Dowel -->
-    <g transform="translate(-5, 0)">
-      <rect x="0" y="-5" width="10" height="10" fill="#E9CF9C" stroke="black" stroke-width="0.3"/>
-      <text x="5" y="-7" text-anchor="middle" font-size="2.3" stroke="none">Ø10 dowel</text>
-      <text x="5" y="11" text-anchor="middle" font-size="2.3" stroke="none">10 mm long</text>
+    <!-- Wood puck Ø18 x 12 cutaway — scaled 2x so OD 36, thick 24 -->
+    <g transform="translate(0, 80)">
+      <!-- back ellipse (hidden behind) -->
+      <ellipse cx="0" cy="24" rx="18" ry="5" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- front body sides with cutaway: split into two halves, right side cutaway -->
+      <!-- Left half full -->
+      <path d="M -18 0 L -18 24 A 18 5 0 0 0 0 29 L 0 -5 A 18 5 0 0 0 -18 0 Z" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- Right half: show internal magnet pocket via cutaway -->
+      <path d="M 18 0 L 18 24 A 18 5 0 0 1 0 29 L 0 -5 A 18 5 0 0 1 18 0 Z" fill="url(#woodHatch)" stroke="black" stroke-width="0.25" opacity="0.35"/>
+      <!-- Pocket outline visible through cutaway: Ø12 x 5 deep from front; scaled = 24 wide, 10 deep, starts 4mm in from front (2mm wall * 2x) -->
+      <ellipse cx="0" cy="4" rx="12" ry="3.3" fill="none" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <ellipse cx="0" cy="14" rx="12" ry="3.3" fill="none" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="-12" y1="4" x2="-12" y2="14" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="12" y1="4" x2="12" y2="14" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <!-- Through-hole: Ø4 (=8 wide at 2x) full depth -->
+      <line x1="-4" y1="0" x2="-4" y2="24" stroke="black" stroke-width="0.18" stroke-dasharray="0.8,0.6"/>
+      <line x1="4" y1="0" x2="4" y2="24" stroke="black" stroke-width="0.18" stroke-dasharray="0.8,0.6"/>
+      <text x="22" y="6" font-size="2.4" stroke="none">wood Ø18 × 12</text>
+      <text x="22" y="10" font-size="2.0" stroke="none" fill="#444">cutaway shows pocket</text>
+      <text x="22" y="20" font-size="2.0" stroke="none" fill="#444">Ø12 × 5 mag pocket</text>
+      <text x="22" y="23" font-size="2.0" stroke="none" fill="#444">Ø4 through-hole</text>
     </g>
 
-    <!-- Panel -->
-    <g transform="translate(10, 0)">
-      <rect x="0" y="-20" width="15" height="40" fill="url(#panelAS)" stroke="black" stroke-width="0.3"/>
-      <!-- 5mm deep dowel hole on front of panel -->
-      <rect x="0" y="-5" width="5" height="10" fill="white" stroke="black" stroke-width="0.3"/>
-      <text x="7.5" y="-22" text-anchor="middle" font-size="2.3" stroke="none">back panel</text>
-      <text x="7.5" y="24" text-anchor="middle" font-size="2.3" stroke="none">≥15 mm</text>
+    <!-- Magnet ring Ø12 x 5 (x2 = Ø24 x 10) -->
+    <g transform="translate(0, 118)">
+      <ellipse cx="0" cy="0" rx="12" ry="3.3" fill="url(#magnetHatch)" stroke="black" stroke-width="0.22"/>
+      <path d="M -12 0 L -12 10 A 12 3.3 0 0 0 12 10 L 12 0" fill="url(#magnetHatch)" stroke="black" stroke-width="0.22"/>
+      <ellipse cx="0" cy="0" rx="4" ry="1.1" fill="white" stroke="black" stroke-width="0.22"/>
+      <ellipse cx="0" cy="10" rx="4" ry="1.1" fill="white" stroke="black" stroke-width="0.22" stroke-dasharray="0.8,0.5"/>
+      <line x1="-4" y1="0" x2="-4" y2="10" stroke="black" stroke-width="0.2"/>
+      <line x1="4" y1="0" x2="4" y2="10" stroke="black" stroke-width="0.2"/>
+      <text x="16" y="3" font-size="2.4" stroke="none">N52 ring</text>
+      <text x="16" y="7" font-size="2.0" stroke="none" fill="#444">12 × 5 × Ø4</text>
     </g>
 
-    <!-- Wall behind panel -->
-    <g transform="translate(28, 0)">
-      <rect x="0" y="-20" width="10" height="40" fill="url(#wallAS)" stroke="black" stroke-width="0.2"/>
-      <text x="5" y="24" text-anchor="middle" font-size="2.3" stroke="none">wall</text>
+    <!-- Mount A: VHB tape 15x15x1 (x2 = 30 wide x 2 thick) -->
+    <g transform="translate(0, 138)">
+      <rect x="-15" y="0" width="30" height="2" fill="url(#tapeHatch)" stroke="black" stroke-width="0.22"/>
+      <text x="18" y="2" font-size="2.4" stroke="none">VHB 4941</text>
+      <text x="18" y="5" font-size="2.0" stroke="none" fill="#444">15 × 15 × 1</text>
     </g>
 
-    <!-- Connecting dotted lines -->
-    <g stroke="#999" stroke-width="0.15" stroke-dasharray="1,0.5">
-      <line x1="-45" y1="0" x2="-30" y2="0"/>
-      <line x1="-29" y1="0" x2="-20" y2="0"/>
-      <line x1="-8" y1="0" x2="-5" y2="0"/>
-      <line x1="5" y1="0" x2="10" y2="0"/>
-      <line x1="25" y1="0" x2="28" y2="0"/>
+    <!-- Wall (drywall) 60 wide x 16 tall -->
+    <g transform="translate(0, 150)">
+      <rect x="-32" y="0" width="64" height="20" fill="url(#drywallHatch)" stroke="black" stroke-width="0.25"/>
+      <text x="0" y="29" text-anchor="middle" font-size="2.4" stroke="none">drywall</text>
     </g>
   </g>
 
-  <!-- ================ MOUNT C: SCREW ================ -->
-  <g transform="translate(247, 55)">
-    <text x="0" y="-25" text-anchor="middle" font-size="4" font-weight="bold" stroke="none">Mount C — M4 Countersunk Screw</text>
+  <!-- =================== COLUMN B: DOWEL =================== -->
+  <g transform="translate(148.5, 0)">
+    <line x1="0" y1="42" x2="0" y2="186" stroke="black" stroke-width="0.1" stroke-dasharray="2,1,0.4,1"/>
 
-    <!-- Knife -->
-    <g transform="translate(-55, 0)">
-      <rect x="0" y="-15" width="10" height="30" fill="#BBBBBB" stroke="black" stroke-width="0.2"/>
-      <text x="5" y="20" text-anchor="middle" font-size="2.3" stroke="none">knife blade</text>
+    <g transform="translate(0, 45)">
+      <path d="M -30 -2 L 28 -2 L 30 0 L 28 2 L -30 2 Z" fill="url(#bladeHatch)" stroke="black" stroke-width="0.2"/>
+      <text x="34" y="1" font-size="2.4" stroke="none">knife blade</text>
     </g>
 
-    <!-- Leather -->
-    <g transform="translate(-30, 0)">
-      <rect x="0" y="-12.5" width="1" height="25" fill="url(#leatherAS)" stroke="black" stroke-width="0.2"/>
-      <text x="0.5" y="-14" text-anchor="middle" font-size="2.3" stroke="none">leather</text>
+    <g transform="translate(0, 55)" stroke="#888" fill="none" stroke-width="0.18">
+      <path d="M -6 0 Q 0 -3 6 0" stroke-dasharray="0.8,0.6"/>
+      <path d="M -10 0 Q 0 -5 10 0" stroke-dasharray="0.8,0.6"/>
+      <path d="M -14 0 Q 0 -7 14 0" stroke-dasharray="0.8,0.6"/>
     </g>
 
-    <!-- Puck body with back countersink -->
-    <g transform="translate(-20, 0)">
-      <rect x="0" y="-12.5" width="12" height="25" fill="url(#woodAS)" stroke="black" stroke-width="0.3"/>
-      <!-- Magnet pocket -->
-      <rect x="2" y="-10" width="5" height="20" fill="white" stroke="none"/>
-      <rect x="2" y="-10" width="5" height="7.75" fill="url(#magnetAS)" stroke="black" stroke-width="0.25"/>
-      <rect x="2" y="2.25" width="5" height="7.75" fill="url(#magnetAS)" stroke="black" stroke-width="0.25"/>
-      <!-- Through hole -->
-      <rect x="0" y="-2.25" width="12" height="4.5" fill="white" stroke="none"/>
-      <line x1="0" y1="-2.25" x2="10" y2="-2.25" stroke="black" stroke-width="0.2"/>
-      <line x1="0" y1="2.25" x2="10" y2="2.25" stroke="black" stroke-width="0.2"/>
-      <!-- Countersink at back: Ø9 × 2 deep -->
-      <polygon points="10,-2.25 10,2.25 12,4.5 12,-4.5" fill="white" stroke="black" stroke-width="0.3"/>
-      <!-- re-outline -->
-      <line x1="0" y1="-12.5" x2="12" y2="-12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="12.5" x2="12" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="-12.5" x2="0" y2="-2.25" stroke="black" stroke-width="0.3"/>
-      <line x1="0" y1="2.25" x2="0" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <line x1="12" y1="-12.5" x2="12" y2="-4.5" stroke="black" stroke-width="0.3"/>
-      <line x1="12" y1="4.5" x2="12" y2="12.5" stroke="black" stroke-width="0.3"/>
-      <text x="6" y="-14" text-anchor="middle" font-size="2.3" stroke="none">puck w/ countersink</text>
+    <g transform="translate(0, 65)">
+      <ellipse cx="0" cy="0" rx="18" ry="5" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+      <path d="M -18 0 L -18 2 A 18 5 0 0 0 18 2 L 18 0" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
     </g>
 
-    <!-- Screw -->
-    <g transform="translate(-6, 0)">
-      <!-- flat head -->
-      <polygon points="0,-4.5 2,-2 2,2 0,4.5" fill="#666" stroke="black" stroke-width="0.2"/>
-      <!-- shaft -->
-      <rect x="2" y="-1.5" width="22" height="3" fill="#999" stroke="black" stroke-width="0.2"/>
-      <!-- tip -->
-      <polygon points="24,-1.5 24,1.5 26,0" fill="#999" stroke="black" stroke-width="0.2"/>
-      <text x="13" y="-6" text-anchor="middle" font-size="2.3" stroke="none">M4 × 30 countersunk</text>
+    <g transform="translate(0, 80)">
+      <ellipse cx="0" cy="24" rx="18" ry="5" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+      <path d="M -18 0 L -18 24 A 18 5 0 0 0 0 29 L 0 -5 A 18 5 0 0 0 -18 0 Z" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+      <path d="M 18 0 L 18 24 A 18 5 0 0 1 0 29 L 0 -5 A 18 5 0 0 1 18 0 Z" fill="url(#woodHatch)" stroke="black" stroke-width="0.25" opacity="0.35"/>
+      <ellipse cx="0" cy="4" rx="12" ry="3.3" fill="none" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <ellipse cx="0" cy="14" rx="12" ry="3.3" fill="none" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="-12" y1="4" x2="-12" y2="14" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="12" y1="4" x2="12" y2="14" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="-4" y1="0" x2="-4" y2="24" stroke="black" stroke-width="0.18" stroke-dasharray="0.8,0.6"/>
+      <line x1="4" y1="0" x2="4" y2="24" stroke="black" stroke-width="0.18" stroke-dasharray="0.8,0.6"/>
+      <!-- Back-face dowel socket: Ø8 × 5 = 16 wide x 10 tall, on back side from y=14 to y=24 -->
+      <ellipse cx="0" cy="24" rx="8" ry="2.2" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray="1,0.6"/>
+      <line x1="-8" y1="14" x2="-8" y2="24" stroke="black" stroke-width="0.2" stroke-dasharray="1,0.6"/>
+      <line x1="8" y1="14" x2="8" y2="24" stroke="black" stroke-width="0.2" stroke-dasharray="1,0.6"/>
+      <text x="22" y="20" font-size="2.0" stroke="none" fill="#444">+ Ø8 × 5 back socket</text>
     </g>
 
-    <!-- Wall + anchor -->
-    <g transform="translate(10, 0)">
-      <rect x="0" y="-20" width="20" height="40" fill="url(#wallAS)" stroke="black" stroke-width="0.3"/>
-      <!-- anchor / pilot -->
-      <rect x="0" y="-2.5" width="17" height="5" fill="white" stroke="black" stroke-width="0.2"/>
-      <text x="10" y="-22" text-anchor="middle" font-size="2.3" stroke="none">wall + anchor</text>
-      <text x="10" y="24" text-anchor="middle" font-size="2.3" stroke="none">drywall: Ø5 + plastic plug</text>
-      <text x="10" y="27" text-anchor="middle" font-size="2.3" stroke="none">stud: Ø3 pilot only</text>
+    <g transform="translate(0, 118)">
+      <ellipse cx="0" cy="0" rx="12" ry="3.3" fill="url(#magnetHatch)" stroke="black" stroke-width="0.22"/>
+      <path d="M -12 0 L -12 10 A 12 3.3 0 0 0 12 10 L 12 0" fill="url(#magnetHatch)" stroke="black" stroke-width="0.22"/>
+      <ellipse cx="0" cy="0" rx="4" ry="1.1" fill="white" stroke="black" stroke-width="0.22"/>
+      <ellipse cx="0" cy="10" rx="4" ry="1.1" fill="white" stroke="black" stroke-width="0.22" stroke-dasharray="0.8,0.5"/>
+      <line x1="-4" y1="0" x2="-4" y2="10" stroke="black" stroke-width="0.2"/>
+      <line x1="4" y1="0" x2="4" y2="10" stroke="black" stroke-width="0.2"/>
     </g>
 
-    <!-- Connecting dotted lines -->
-    <g stroke="#999" stroke-width="0.15" stroke-dasharray="1,0.5">
-      <line x1="-45" y1="0" x2="-30" y2="0"/>
-      <line x1="-29" y1="0" x2="-20" y2="0"/>
+    <!-- Mount B: dowel Ø8 x 10 (x2 = 16 wide x 20 tall) -->
+    <g transform="translate(0, 138)">
+      <ellipse cx="0" cy="0" rx="8" ry="2.2" fill="url(#woodHatch)" stroke="black" stroke-width="0.22"/>
+      <path d="M -8 0 L -8 20 A 8 2.2 0 0 0 8 20 L 8 0" fill="url(#woodHatch)" stroke="black" stroke-width="0.22"/>
+      <text x="14" y="6" font-size="2.4" stroke="none">Ø8 dowel × 10</text>
+      <text x="14" y="9" font-size="2.0" stroke="none" fill="#444">5 in panel, 5 in puck</text>
+    </g>
+
+    <!-- Wall panel (hardwood) + drywall behind -->
+    <g transform="translate(0, 158)">
+      <rect x="-32" y="0" width="64" height="6" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+      <rect x="-32" y="6" width="64" height="14" fill="url(#drywallHatch)" stroke="black" stroke-width="0.25"/>
+      <text x="-30" y="4" font-size="2.0" stroke="none">hardwood panel ≥15</text>
+      <text x="0" y="29" text-anchor="middle" font-size="2.4" stroke="none">drywall</text>
     </g>
   </g>
 
-  <!-- ====== Stack-up dimensions summary ====== -->
-  <g transform="translate(30, 140)" stroke="none">
-    <text x="0" y="0" font-size="4" font-weight="bold">INSTALLED DEPTH (from wall face to knife)</text>
-    <text x="0" y="6" font-size="2.8">Mount A (VHB):   1 mm tape + 12 mm wood + 1 mm leather = <tspan font-weight="bold">14 mm</tspan></text>
-    <text x="0" y="10" font-size="2.8">Mount B (Dowel): panel (user choice) + 5 mm dowel exposed + 12 mm wood + 1 mm leather = panel + <tspan font-weight="bold">13 mm</tspan></text>
-    <text x="0" y="14" font-size="2.8">Mount C (Screw): 12 mm wood + 1 mm leather = <tspan font-weight="bold">13 mm</tspan> (screw head recessed in puck)</text>
-    <text x="0" y="20" font-size="2.6" font-style="italic">All three are under the typical 15–20 mm profile of a commercial magnetic knife bar.</text>
+  <!-- =================== COLUMN C: SCREW =================== -->
+  <g transform="translate(240, 0)">
+    <line x1="0" y1="42" x2="0" y2="186" stroke="black" stroke-width="0.1" stroke-dasharray="2,1,0.4,1"/>
+
+    <g transform="translate(0, 45)">
+      <path d="M -30 -2 L 28 -2 L 30 0 L 28 2 L -30 2 Z" fill="url(#bladeHatch)" stroke="black" stroke-width="0.2"/>
+      <text x="34" y="1" font-size="2.4" stroke="none">knife blade</text>
+    </g>
+
+    <g transform="translate(0, 55)" stroke="#888" fill="none" stroke-width="0.18">
+      <path d="M -6 0 Q 0 -3 6 0" stroke-dasharray="0.8,0.6"/>
+      <path d="M -10 0 Q 0 -5 10 0" stroke-dasharray="0.8,0.6"/>
+      <path d="M -14 0 Q 0 -7 14 0" stroke-dasharray="0.8,0.6"/>
+    </g>
+
+    <g transform="translate(0, 65)">
+      <ellipse cx="0" cy="0" rx="18" ry="5" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+      <path d="M -18 0 L -18 2 A 18 5 0 0 0 18 2 L 18 0" fill="url(#leatherHatch)" stroke="black" stroke-width="0.25"/>
+    </g>
+
+    <g transform="translate(0, 80)">
+      <ellipse cx="0" cy="24" rx="18" ry="5" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+      <path d="M -18 0 L -18 24 A 18 5 0 0 0 0 29 L 0 -5 A 18 5 0 0 0 -18 0 Z" fill="url(#woodHatch)" stroke="black" stroke-width="0.25"/>
+      <path d="M 18 0 L 18 24 A 18 5 0 0 1 0 29 L 0 -5 A 18 5 0 0 1 18 0 Z" fill="url(#woodHatch)" stroke="black" stroke-width="0.25" opacity="0.35"/>
+      <ellipse cx="0" cy="4" rx="12" ry="3.3" fill="none" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <ellipse cx="0" cy="14" rx="12" ry="3.3" fill="none" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="-12" y1="4" x2="-12" y2="14" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="12" y1="4" x2="12" y2="14" stroke="black" stroke-width="0.18" stroke-dasharray="1,0.6"/>
+      <line x1="-4" y1="0" x2="-4" y2="24" stroke="black" stroke-width="0.18" stroke-dasharray="0.8,0.6"/>
+      <line x1="4" y1="0" x2="4" y2="24" stroke="black" stroke-width="0.18" stroke-dasharray="0.8,0.6"/>
+      <!-- Back-face countersink: Ø7 × 1.5 = 14 wide x 3 tall -->
+      <ellipse cx="0" cy="24" rx="7" ry="1.9" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray="1,0.6"/>
+      <line x1="-7" y1="21" x2="-4" y2="24" stroke="black" stroke-width="0.2" stroke-dasharray="1,0.6"/>
+      <line x1="7" y1="21" x2="4" y2="24" stroke="black" stroke-width="0.2" stroke-dasharray="1,0.6"/>
+      <text x="22" y="20" font-size="2.0" stroke="none" fill="#444">+ Ø7 × 1.5 c'sink</text>
+    </g>
+
+    <g transform="translate(0, 118)">
+      <ellipse cx="0" cy="0" rx="12" ry="3.3" fill="url(#magnetHatch)" stroke="black" stroke-width="0.22"/>
+      <path d="M -12 0 L -12 10 A 12 3.3 0 0 0 12 10 L 12 0" fill="url(#magnetHatch)" stroke="black" stroke-width="0.22"/>
+      <ellipse cx="0" cy="0" rx="4" ry="1.1" fill="white" stroke="black" stroke-width="0.22"/>
+      <ellipse cx="0" cy="10" rx="4" ry="1.1" fill="white" stroke="black" stroke-width="0.22" stroke-dasharray="0.8,0.5"/>
+      <line x1="-4" y1="0" x2="-4" y2="10" stroke="black" stroke-width="0.2"/>
+      <line x1="4" y1="0" x2="4" y2="10" stroke="black" stroke-width="0.2"/>
+    </g>
+
+    <!-- Mount C: M3 × 25 countersunk screw passing through magnet -->
+    <g transform="translate(0, 75)">
+      <!-- Screw drawn vertically passing through entire puck stack; head at top? No — head sits in countersink on back (puck back-face = wall side). Show screw going from puck back down to wall, with shaft protruding 14 mm. -->
+      <!-- Conventionally: head on the wall-side of puck (in countersink on back face), shaft into wall. -->
+      <!-- Position: screw head Ø7 sits at puck back, y=104 (after puck back = 104 in this coord). Adjust... let me redo without translate -->
+    </g>
+    <g>
+      <!-- Screw shown floating between magnet and wall, exploded -->
+      <!-- Head: trapezoidal (countersunk) -->
+      <g transform="translate(0, 138)">
+        <!-- countersunk head: top wider (Ø7 → 14 at 2x), tapering to shaft Ø3 → 6 -->
+        <path d="M -7 0 L 7 0 L 3 3 L -3 3 Z" fill="url(#metalHatch)" stroke="black" stroke-width="0.2"/>
+        <!-- shaft -->
+        <rect x="-3" y="3" width="6" height="50" fill="url(#metalHatch)" stroke="black" stroke-width="0.2"/>
+        <!-- threads (zigzag indicator on shaft) -->
+        <g stroke="black" stroke-width="0.15" fill="none">
+          <line x1="-3" y1="8" x2="3" y2="10"/>
+          <line x1="-3" y1="12" x2="3" y2="14"/>
+          <line x1="-3" y1="16" x2="3" y2="18"/>
+          <line x1="-3" y1="20" x2="3" y2="22"/>
+          <line x1="-3" y1="24" x2="3" y2="26"/>
+          <line x1="-3" y1="28" x2="3" y2="30"/>
+          <line x1="-3" y1="32" x2="3" y2="34"/>
+          <line x1="-3" y1="36" x2="3" y2="38"/>
+          <line x1="-3" y1="40" x2="3" y2="42"/>
+          <line x1="-3" y1="44" x2="3" y2="46"/>
+          <line x1="-3" y1="48" x2="3" y2="50"/>
+        </g>
+        <!-- tip -->
+        <path d="M -3 53 L 0 56 L 3 53 Z" fill="url(#metalHatch)" stroke="black" stroke-width="0.2"/>
+        <text x="10" y="6" font-size="2.4" stroke="none">M3 × 25</text>
+        <text x="10" y="9" font-size="2.0" stroke="none" fill="#444">countersunk</text>
+        <text x="10" y="12" font-size="2.0" stroke="none" fill="#444">stainless wood screw</text>
+      </g>
+    </g>
+
+    <!-- Wall + anchor: drywall slot + anchor sleeve where screw lands -->
+    <g transform="translate(0, 174)">
+      <rect x="-32" y="0" width="64" height="16" fill="url(#drywallHatch)" stroke="black" stroke-width="0.25"/>
+      <!-- Anchor sleeve (Ø4 visible from outside, expanding inside) -->
+      <path d="M -2 0 L -3 16 L 3 16 L 2 0 Z" fill="#E8D49A" stroke="black" stroke-width="0.2"/>
+      <text x="6" y="3" font-size="2.0" stroke="none" fill="#444">plastic anchor</text>
+      <text x="0" y="22" text-anchor="middle" font-size="2.4" stroke="none">drywall (or stud — no anchor)</text>
+    </g>
   </g>
 
-  <g transform="translate(30, 170)" stroke="none">
-    <text x="0" y="0" font-size="4" font-weight="bold">COMMON PUCK BODY (all three mounts)</text>
-    <text x="0" y="6" font-size="2.8">Ø25 mm × 12 mm hardwood + 1 mm leather face. Ø20 × 5 mm front magnet pocket. Ø4.5 mm through-hole.</text>
-    <text x="0" y="10" font-size="2.8">One ring magnet SKU: N52, 20 OD × 5 thick × 4.5 ID. One puck design, three install paths.</text>
-  </g>
-
-  <!-- Scale bar -->
-  <g transform="translate(120, 195)">
-    <rect x="0" y="-2" width="50" height="4" fill="white" stroke="black" stroke-width="0.2"/>
-    <rect x="0" y="-2" width="10" height="4" fill="black"/>
-    <rect x="20" y="-2" width="10" height="4" fill="black"/>
-    <rect x="40" y="-2" width="10" height="4" fill="black"/>
-    <text x="25" y="-3.5" text-anchor="middle" font-size="2.8" stroke="none" font-weight="bold">1:1 SCALE — 50 mm</text>
+  <!-- =================== SCALE BAR =================== -->
+  <g transform="translate(122, 200)">
+    <rect x="0" y="-2" width="50" height="2.5" fill="white" stroke="black" stroke-width="0.2"/>
+    <rect x="0" y="-2" width="10" height="2.5" fill="black"/>
+    <rect x="20" y="-2" width="10" height="2.5" fill="black"/>
+    <rect x="40" y="-2" width="10" height="2.5" fill="black"/>
+    <text x="25" y="-3" text-anchor="middle" font-size="2.4" stroke="none" font-weight="bold">50 mm at 1:1 (drawn elements shown 2×)</text>
+    <text x="0" y="3.5" font-size="2.2" stroke="none">0</text>
+    <text x="50" y="3.5" font-size="2.2" text-anchor="end" stroke="none">50</text>
   </g>
 </svg>
